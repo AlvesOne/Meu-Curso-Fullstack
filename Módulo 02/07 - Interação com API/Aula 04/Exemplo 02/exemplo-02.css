@@ -1,0 +1,22 @@
+header {
+    background-color:rgb(175, 146, 146);
+    color: #0a0101;
+    text-align: center;
+    padding: 20px 20px ;
+    display: flex;
+    justify-content:space-around;
+    font-size:larger;
+    align-items: center;
+    flex-direction: row;
+ 
+}
+nav { width: 200px;
+    display: flex;
+    justify-content: space-between;
+
+}
+nav li {
+    display:ce;
+    margin: 0 0 0 20px;
+}
+
