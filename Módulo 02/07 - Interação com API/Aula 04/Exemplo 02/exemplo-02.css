@@ -1,3 +1,4 @@
+
 header {
     background-color:rgb(175, 146, 146);
     color: #0a0101;
@@ -18,5 +19,15 @@ nav { width: 200px;
 nav li {
     display:ce;
     margin: 0 0 0 20px;
+}
+.titulo{
+    color: blue;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    width: auto;
+    height: 250;
+    
 }
 
