@@ -1,0 +1,37 @@
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+    background: rgb(188, 200, 229);
+}
+.card{
+    border: 1px solid rgb(141, 136, 136);
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 15px 15px 15px;
+    row-gap: 10px;
+}
+.valores{
+    display: flex;
+    column-gap: 10px;
+    flex-direction: row;
+}
+.valoresCom{
+    font-size: larger;
+}
+.valoresSem{
+    font-size: small;
+    color: red;
+    text-decoration: line-through;
+}
+.titulo{
+    color: green;
+    font-weight: bold;
+}
+p{
+    margin: 0px;
+}

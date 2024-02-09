@@ -14,17 +14,19 @@ async function procurar(){
             <p class='titulo'>
                 ${convertido[produto].nome} 
             </p>
-            <p class='titulo'>
+            <p>
                 ${convertido[produto].descricao} 
             </p>
-            <span>
+            <div class="valores">
+            <span class="valoresCom" >
                 ${convertido[produto].valorComDesconto}
             </span>
-            <span>
+            <span class="valoresSem">
                 ${convertido[produto].valorSemDesconto}
             </span>
+            </div>
             <p>
-                ${convertido[produto].freteGratis}
+                ${convertido[produto].tipoEntrega}
             </p>
             
             </div>

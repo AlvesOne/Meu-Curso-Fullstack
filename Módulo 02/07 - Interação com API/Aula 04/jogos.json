@@ -1,17 +1,43 @@
 [
     {
-        
+        "nome":"Bomberman",
+        "imagem":"jogos/bomberman.jpg",
+        "classificacao":"acão"
+    },
+    {
+        "nome":"Devil May Cry 3",
+        "imagem":"jogos/devilmay cry.jpeg",
+        "classificacao":"acão"
+    },
+    {
+        "nome":"Final Fantasy",
+        "imagem":"jogos/final fantasy.jpg",
+        "classificacao":"Rpg,acão"
+    },
+    {
+        "nome":"God Of War",
+        "imagem":"jogos/god of war.jpg",
+        "classificacao":"sobrevivencia,acão"
+    },
+    {
+        "nome":"Resident Evil",
+        "imagem":"jogos/resident evil.jpg",
+        "classificacao":"sobrevivencia,acão"
+    },
+    {
+        "nome":"Valorant",
+        "imagem":"jogos/valorant.jpg",
+        "classificacao":"tiro,acão,violencia"
+    },
+    {
+        "nome":"Wild Rift",
+        "imagem":"jogos/wild rift.jpeg",
+        "classificacao":"moba5x5,acão"
+    },
+    {
+        "nome":"Winning Eleven",
+        "imagem":"jogos/winning eleven.jpg",
+        "classificacao":"futebol,esporte"
     }
-
-
-
-
-
-
-
-
-
-
-
 
 ]
