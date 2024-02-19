@@ -1,0 +1,58 @@
+[
+    {
+        "img": "https://m.media-amazon.com/images/I/71R+dGPqtrL._AC_SX300_SY300_.jpg",
+        "nome": "Notebook Acer Nitro 5",
+        "descricao": "Notbook gamer de alta qualidade",
+        "valorComDesconto": 3.880,
+        "valorSemDesconto": 4.290
+    },
+
+    {
+        "img":"https://http2.mlstatic.com/D_NQ_NP_694030-MLB74398390378_022024-O.webp",
+        "nome": "Celular Red Magic 9 pro",
+        "descricao": "O melhor e mais potente celular gamer",
+        "valorComDesconto": 4.700,
+        "valorSemDesconto": 5.100
+    },
+
+    {
+        "img": "https://http2.mlstatic.com/D_NQ_NP_721092-MLB72366654714_102023-O.webp",
+        "nome": "PC gamer positivo",
+        "descricao": "PC gamer completo de alta qualidade",
+        "valorComDesconto": 3.600,
+        "valorSemDesconto": 3.900
+    },
+
+    {
+        "img":"https://http2.mlstatic.com/D_NQ_NP_997600-MLU73983661330_012024-O.webp",
+        "nome": "Cadeira gamer RGB",
+        "descricao": "Cadeira gamer com lEDs RGB de alta qualidade",
+        "valorComDesconto": 1.100,
+        "valorSemDesconto": 890.00
+    },
+
+    {
+        "img":"https://http2.mlstatic.com/D_NQ_NP_862858-MLU72152073883_102023-O.webp",
+        "nome": "Mesa gamer",
+        "descricao": "Mesa gamer de alta qualidade",
+        "valorComDesconto": 600.00,
+        "valorSemDesconto": 520.00
+    },
+
+    {
+        "img": "https://http2.mlstatic.com/D_NQ_NP_725910-MLB51181154725_082022-O.webp",
+        "nome": "Headset Havit",
+        "descricao": "Heaset Havit, o melhor e com mais alta qualidade",
+        "valorComDesconto": 280.00,
+        "valorSemDesconto": 310.00
+    },
+
+    {
+        "img":"https://http2.mlstatic.com/D_NQ_NP_873157-MLB54984531460_052023-O.webp",
+        "nome": "Mouse,teclado e mousepad gamer",
+        "descricao": "Kit mouse,teclado e mouse pad gamer de alta qualidade",
+        "valorComDesconto": 340.00,
+        "valorSemDesconto": 300.00
+    }
+
+]
