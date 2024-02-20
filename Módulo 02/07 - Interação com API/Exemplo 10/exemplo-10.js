@@ -5,8 +5,19 @@ async function busca(){
 
     let listaDiv = document.getElementById("lista-card")
 
-    for(let x in produtos){
-        listaDiv.innerHTML += `<h1> ${produtos[x].nome} </h1>`
+    for(let produto of produtos){
+        listaDiv.innerHTML += `
+            <div class="card">
+                <img src="${produto.img}" width="250" heigth="auto">
+                <h3> ${produto.nome} </h3>
+                <p>${produto.descricao} </p>
+                <div>
+                    <span> R$ ${(produto.valorComDesconto).toFixed(2).replace(".",",")} </span>
+                    <span> R$ ${(produto.valorSemDesconto).toFixed(2).replace(".",",")} </span>
+                </div>
+            </div>
+        `
+
     }
 }
 busca()
