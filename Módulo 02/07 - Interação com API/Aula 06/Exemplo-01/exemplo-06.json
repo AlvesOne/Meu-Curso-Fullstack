@@ -1,0 +1,65 @@
+[
+    {
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2NlBMel2PfX0Y7b-z0VJvCI-Po27xGKzxng&usqp=CAU",
+        "modelo":"Chevrolet Joy Plus",
+        "ano": 2021,
+        "cor":"Branco",
+        "valorComDesconto": 61000,
+        "valorSemDesconto": 69800
+    },
+
+    {
+        "img":"https://www.chevrolet.com.br/content/dam/chevrolet/mercosur/brazil/portuguese/index/cars/2023-onix-plus/mov/01-images/onix-plus-ltz-at-turbo.png?imwidth=960",
+        "modelo":"Chevrolet Onix sedan",
+        "ano":2022,
+        "cor":"Branco",
+        "valorComDesconto": 98000,
+        "valorSemDesconto": 92800
+    },
+
+    {
+        "img":"https://para.umuaramafiat.com.br/wp-content/uploads/2022/12/pulse-abarth-intro.jpg",
+        "modelo":"Fiat Abarth pulse",
+        "ano":2023,
+        "cor":"Preto",
+        "valorComDesconto": 110000,
+        "valorSemDesconto": 102800
+    },
+
+    {
+        "img":"https://www.media.stellantis.com/cache/7/2/c/7/a/72c7acf987a616384fdcfaf66f8ef1bbbdbb4664.jpeg",
+        "modelo":"Fiat Argo",
+        "ano": 2022,
+        "cor":"Prata",
+        "valorComDesconto": 81000,
+        "valorSemDesconto": 79200
+    },
+
+    {
+        "img":"https://fotos-jornaldocarro-estadao.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2023/10/31153445/3-byd.jpg",
+        "modelo":"BYD eletrico hibrido",
+        "ano": 2024,
+        "cor":"Cinza",
+        "valorComDesconto": 100300,
+        "valorSemDesconto": 99800
+    },
+
+    {
+        "img":"https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2023/03/20/image1-1ji7s06rehv1h.jpeg",
+        "modelo":"Nissan Sentra",
+        "ano":2024,
+        "cor":"Branco",
+        "valorComDesconto": 120000,
+        "valorSemDesconto": 117900
+    },
+
+    {
+        "img":"https://t.ctcdn.com.br/kcXjeUOow1e7w1z_QLVLegDnh90=/640x360/smart/i830011.jpeg",
+        "modelo":"GWM Haval H6 GT",
+        "ano":2023,
+        "cor":"Branco",
+        "valorComDesconto": 160000,
+        "valorSemDesconto": 156800
+    }
+
+]
