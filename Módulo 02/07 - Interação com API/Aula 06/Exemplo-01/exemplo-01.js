@@ -9,12 +9,14 @@ async function automoveis(){
         div1.innerHTML +=`
             <div class="card">
                 <img src="${carro.img}" width="250" heidth="auto">
-                <h4>${carro.modelo}</h4>
-                <p>${carro.ano}</p>
-                <p>${carro.cor}</p>
+                <div class="titulo1">
+                    <h4 class="titulo">${carro.modelo}</h4>
+                    <p>Ano: ${carro.ano}</p>
+                    <p>Cor: ${carro.cor}</p>
+                </div>
                 <div>
-                    <span> R$ ${(carro.valorComDesconto).toFixed(2).replace(".",",")}</span>
-                    <span> R$ ${(carro.valorSemDesconto).toFixed(2).replace(".",",")}</span>
+                    <span class="valorCom"> R$ ${(carro.valorComDesconto).toFixed(2).replace(".",",")}</span>
+                    <span class="valorSem"> R$ ${(carro.valorSemDesconto).toFixed(2).replace(".",",")}</span>
                 </div>
             </div>
 

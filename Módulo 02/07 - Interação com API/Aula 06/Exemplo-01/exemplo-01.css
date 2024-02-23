@@ -1,3 +1,26 @@
+body{
+    background: rgb(249, 239, 239);
+}
+header{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding: 2rem 0;
+    width: 100%;
+}
+header nav ul {
+    display: flex;
+    justify-content: center;
+}
+li{
+    list-style-type: none;
+    margin: 0 9rem;
+    text-decoration: none;
+    color: #fff;
+    font-size:larger;
+    
+}
+
 .card{
     border: 2px solid rgb(137, 136, 136);
     width: 250px;
@@ -5,5 +28,43 @@
     flex-direction: column;
     align-items: center;
     padding: 0px 20px 20px 20px;
+    row-gap: 1px;
+    box-shadow:2px 2px 2px 0px black;
+    background: #fbcd72;
+    
+}
+.lista-card{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
     row-gap: 20px;
+}
+.valorCom{
+    font-size: larger;
+}
+.valorSem{
+    font-size: small;
+    color: red;
+    text-decoration: line-through;
+}
+.titulo1{
+    margin: 1px;
+}
+.titulo{
+    font-weight: bold;
+    color: blue;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+footer p {
+    margin: 0;
 }
