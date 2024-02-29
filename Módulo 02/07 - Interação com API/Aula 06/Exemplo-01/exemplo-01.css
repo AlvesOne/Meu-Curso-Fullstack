@@ -43,7 +43,7 @@ li{
     font-size: larger;
 }
 .valorSem{
-    font-size: small;
+    font-size: 15px;
     color: red;
     text-decoration: line-through;
 }
