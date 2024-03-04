@@ -1,0 +1,107 @@
+[
+    {
+        "id":10,
+        "img":"https://m.media-amazon.com/images/I/71izFpyABiL._AC_UF1000,1000_QL80_.jpg",
+        "nome":"Celular Xiaomi 12c",
+        "especificacoes":"Xiaomi Redmi 12C 128GB 4GB RAM/Dual Sim/Tela 6.71 Câmeras 50MP+0.08MP e 5MP(Global)",
+        "precoComDesconto":"787.00",
+        "valorSemDesconto":"910.00"
+    },
+
+    {
+        "id":4,
+        "img":"https://m.media-amazon.com/images/I/51rAZ-7IQcL._AC_SX679_.jpg",
+        "nome":"Apple iPhone 14 RED",
+        "especificacoes":"Tela Super Retina XDR de 6,1 polegadas Capacidade 64GB, 128GB, 256GB Sistema de câmera dupla: 12MP principal, 12MP ultrawide com modo retrato",
+        "precoComDesconto":"4049.10",
+        "valorSemDesconto":"4449.00"
+    },
+
+    {
+        "id":8,
+        "img":"https://m.media-amazon.com/images/I/71KZXGAb5fL.__AC_SX300_SY300_QL70_ML2_.jpg",
+        "nome":"Smartphone Samsung Galaxy S24+",
+        "especificacoes":"Galaxy AI, Selfie de 12MP, Tela de 6.7 1-120Hz, 256GB, 12GB RAM - Preto",
+        "precoComDesconto":"5967.00",
+        "valorSemDesconto":"6636.00"
+    },
+
+    {
+        "id":2,
+        "img":"https://m.media-amazon.com/images/I/51vjQLRYFzL._AC_SX679_.jpg",
+        "nome":"Smartphone Moto G84 5G",
+        "especificacoes":"Motorola Moto G84 5G 8GB 256GB Android 13.0 Snapdragon",
+        "precoComDesconto":"1499.00",
+        "valorSemDesconto":"1630.00"
+    },
+
+    {
+        "id":11,
+        "img":"https://m.media-amazon.com/images/I/51xcBSLK2UL._AC_SX679_.jpg",
+        "nome":"ASUS, Smartphone Gamer ROG Phone 6",
+        "especificacoes":"SNAPDRAGON 8GB 256GB/Android 12 Black/SIM (Nano) SIM (Nano) tela 6,78 AMOLED 165 Hz; 3. AirTrigger 6",
+        "precoComDesconto":"4274.00",
+        "valorSemDesconto":"5099.00"
+    },
+
+    {"id":1,
+        "img":"https://m.media-amazon.com/images/I/61foK+hgalL._AC_SX522_.jpg",
+        "nome":"Nubia Red Magic 9 Pro/RedMagic 9 Pro Plus ",
+        "especificacoes":"Snapdragon 8 Gen 3 Qualcomm 8GB 256GB Tela AMOLED 120Hz Camera 50Mp+50Mp+2Mp",
+        "precoComDesconto":"4800.00",
+        "valorSemDesconto":"5200.00"
+    },
+
+    {"id":6,
+        "img":"https://m.media-amazon.com/images/I/61Ue477Ex8S._AC_SX522_.jpg",
+        "nome":"Xiaomi Black Shark 4 Dual Sim 5G ",
+        "especificacoes":" Dual Sim 5G 128 Gb Mirror Black 8 Gb Ram Tela 144 Hz HDR10+ Snapdragon 870 Cameras 48Mp+8Mp+5Mp",
+        "precoComDesconto":"2698.00",
+        "valorSemDesconto":"2998.00"
+    },
+
+    {
+        "id":12,
+        "img":"https://m.media-amazon.com/images/I/61K9AuNIyHL._AC_SX679_.jpg",
+        "nome":"Smartphone Xiaomi Note 13 Pro ",
+        "especificacoes":"256GB / 8GB Ram (Versao Global) Snapdragon 7s Gen 2 Qualcomm Cameras 200Mp+8Mp+2Mp",
+        "precoComDesconto":"1990.00",
+        "valorSemDesconto":"2290.00"
+    },
+
+    {
+        "id":3,
+        "img":"https://m.media-amazon.com/images/I/61qgJ64LKuL.__AC_SX300_SY300_QL70_ML2_.jpg",
+        "nome":"Smartphone Xiaomi POCO X5 Pro 5G ",
+        "especificacoes":"Dual SIM 8GB 256GB 6,67 FHD+ 108Mp+8Mp+2Mp 5000mAh 67W Carregamento (Preto)",
+        "precoComDesconto":"2425.00",
+        "valorSemDesconto":"2600.00"
+    },
+
+    {
+        "id":9,
+        "img":"https://m.media-amazon.com/images/I/61S9wYBcqeL._AC_SX679_.jpg",
+        "nome":"Smartphone Nokia G21 4G",
+        "especificacoes":"128GB Tela HD+ 6.5 Pol. Dual Chip 4GB RAM Pronto para Android 12 Câm Tripla 50MP+Selfie 8MP - NK083",
+        "precoComDesconto":"1399.00",
+        "valorSemDesconto":"1490.00"
+    },
+
+    {
+        "id":7,
+        "img":"https://m.media-amazon.com/images/I/71kZfQA-Y7L.__AC_SY445_SX342_QL70_ML2_.jpg",
+        "nome":"Apple iPhone 11",
+        "especificacoes":"Tela LCD Liquid Retina HD de 6,1 polegadas Resistente a água e pó Sistema de câmara dupla de 12 MP; modo Noite, modo Retrato e vídeos em 4K a 60 fps",
+        "precoComDesconto":"2298.00",
+        "valorSemDesconto":"2500.00"
+    },
+
+    {
+        "id":5,
+        "img":"https://m.media-amazon.com/images/I/61IgJvzu1eL.__AC_SY300_SX300_QL70_ML2_.jpg",
+        "nome":"Smartphone Samsung Galaxy A54 5G",
+        "especificacoes":"Galaxy A54 5G 256GB 8GB RAM Tela 6.4'' Câmera Tripla de até 50MP + Selfie 32MP - Branco",
+        "precoComDesconto":"1999.00",
+        "valorSemDesconto":"2250.00"
+    }
+]
