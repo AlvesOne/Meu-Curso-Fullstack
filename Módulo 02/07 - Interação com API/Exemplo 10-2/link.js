@@ -13,8 +13,8 @@ async function verDetalhe(){
     }
     document.body.innerHTML = `
     <div class="linkCard">
-        <img src="${produtos[inProduto].img}" width="450" heigth="auto">
         <h2 class="titulo1">${produtos[inProduto].nome}</h2>
+        <img src="${produtos[inProduto].img}" width="450" heigth="auto">
         <h3>${produtos[inProduto].descricao}</h3>
         <div>
             <span class="valorCom">R$ ${produtos[inProduto].valorComDesconto}</span>
