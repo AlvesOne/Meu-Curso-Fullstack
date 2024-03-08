@@ -23,7 +23,6 @@ body{
     flex-wrap: wrap;
     column-gap: 20px;
     row-gap: 20px;
-   
     
 }
 h3{
@@ -64,4 +63,7 @@ box-shadow:2px 2px 2px 0px black;
     font-size: 15px;
     color: red;
     text-decoration: line-through;
+}
+button{
+    background: #0084ff;
 }
