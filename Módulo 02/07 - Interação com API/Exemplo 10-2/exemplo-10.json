@@ -1,7 +1,12 @@
 [
     {
-        "id": 2,
-        "img": "https://m.media-amazon.com/images/I/71R+dGPqtrL._AC_SX300_SY300_.jpg",
+        "id":1,
+        "img": [
+                    "https://m.media-amazon.com/images/I/71R+dGPqtrL._AC_SX300_SY300_.jpg",
+                    "https://images.kabum.com.br/produtos/fotos/471697/notebook-gamer-acer-nitro-5-an515-47-r5su-amd-ryzen-5-7535hs-8gb-nvidia-rtx-3050-ssd-512gb-15-6-full-hd-win-11-preto-nh-qlhal-001_1689859065_gg.jpg",
+                    "https://images.kabum.com.br/produtos/fotos/471697/notebook-gamer-acer-nitro-5-an515-47-r5su-amd-ryzen-5-7535hs-8gb-nvidia-rtx-3050-ssd-512gb-15-6-full-hd-win-11-preto-nh-qlhal-001_1689859066_gg.jpg",
+                    "https://images.kabum.com.br/produtos/fotos/471697/notebook-gamer-acer-nitro-5-an515-47-r5su-amd-ryzen-5-7535hs-8gb-nvidia-rtx-3050-ssd-512gb-15-6-full-hd-win-11-preto-nh-qlhal-001_1689859070_gg.jpg" 
+                ],
         "nome": "Notebook Acer Nitro 5",
         "descricao": "Notbook gamer de alta qualidade",
         "valorComDesconto": 3880,
@@ -9,8 +14,13 @@
     },
 
     {
-        "id": 5,
-        "img":"https://http2.mlstatic.com/D_NQ_NP_694030-MLB74398390378_022024-O.webp",
+        "id":2,
+        "img": [
+                    "https://http2.mlstatic.com/D_NQ_NP_694030-MLB74398390378_022024-O.webp",
+                    "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQFGRT080UxsESlDRU-Kp1C2JQ5jTdWBSQzhTKpn_t-UiwZRYC8qUNr2718YH3v3X0ESXrlSJCAzn6Bhab0tl8436ZxM7Jr",
+                    "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQZ0rm2BHYDPYrZF6XMKckZ7Of4_2rW8qAlRKaq71pr69zbHWqlO1FBh5qoMI1IVNu9X2kHV94eslsW-v04V2uI9_5IUc_KSw",
+                    "https://br.redmagic.gg/cdn/shop/files/REDMAGIC-9-Pro-Media-Sleet-1.png"
+                ],
         "nome": "Celular Red Magic 9 pro",
         "descricao": "O melhor e mais potente celular gamer",
         "valorComDesconto": 4700,
@@ -18,8 +28,14 @@
     },
 
     {
-        "id": 3,
-        "img": "https://http2.mlstatic.com/D_NQ_NP_721092-MLB72366654714_102023-O.webp",
+        "id":3,
+        "img": [
+                    "https://http2.mlstatic.com/D_NQ_NP_721092-MLB72366654714_102023-O.webp",
+                    "https://http2.mlstatic.com/D_NQ_NP_685543-MLB72142106698_102023-O.webp",
+                    "https://http2.mlstatic.com/D_NQ_NP_745648-MLB72202560959_102023-O.webp",
+                    "https://http2.mlstatic.com/D_NQ_NP_672721-MLB72204045789_102023-O.webp"
+
+                ],
         "nome": "PC gamer positivo",
         "descricao": "PC gamer completo de alta qualidade",
         "valorComDesconto": 3600,
@@ -27,17 +43,27 @@
     },
 
     {
-        "id": 7,
-        "img":"https://http2.mlstatic.com/D_NQ_NP_997600-MLU73983661330_012024-O.webp",
+        "id":4,
+        "img": [
+                    "https://http2.mlstatic.com/D_NQ_NP_997600-MLU73983661330_012024-O.webp",
+                    "https://http2.mlstatic.com/D_NQ_NP_613323-MLU73579526712_122023-O.webp",
+                    "https://http2.mlstatic.com/D_NQ_NP_913346-MLU73579526722_122023-O.webp",
+                    "https://http2.mlstatic.com/D_NQ_NP_638775-MLU73673561743_122023-O.webp"
+                ],
         "nome": "Cadeira gamer RGB",
-        "descricao": "Cadeira gamer com lEDs RGB de alta qualidade",
+        "descricao": "Cadeira gamer com LEDs RGB de alta qualidade",
         "valorComDesconto": 1100,
         "valorSemDesconto": 890
     },
 
     {
-        "id": 4,
-        "img":"https://http2.mlstatic.com/D_NQ_NP_862858-MLU72152073883_102023-O.webp",
+        "id":5,
+        "img": [
+                    "https://http2.mlstatic.com/D_NQ_NP_862858-MLU72152073883_102023-O.webp",
+                    "https://http2.mlstatic.com/D_NQ_NP_886170-MLU72832002447_112023-O.webp",
+                    "https://http2.mlstatic.com/D_NQ_NP_600688-MLU72647628621_112023-O.webp",
+                    "https://http2.mlstatic.com/D_NQ_NP_998616-MLB69824175780_062023-O.webp"
+                ],
         "nome": "Mesa gamer",
         "descricao": "Mesa gamer de alta qualidade",
         "valorComDesconto": 600,
@@ -45,8 +71,13 @@
     },
 
     {
-        "id": 6,
-        "img": "https://http2.mlstatic.com/D_NQ_NP_725910-MLB51181154725_082022-O.webp",
+        "id":6,
+        "img": [
+                    "https://http2.mlstatic.com/D_NQ_NP_725910-MLB51181154725_082022-O.webp",
+                    "https://http2.mlstatic.com/D_NQ_NP_690494-MLB51181154723_082022-O.webp",
+                    "https://http2.mlstatic.com/D_NQ_NP_942890-MLU72578969178_112023-O.webp",
+                    "https://http2.mlstatic.com/D_NQ_NP_772762-MLU70045320160_062023-O.webp"
+                ],
         "nome": "Headset Havit",
         "descricao": "Heaset Havit, o melhor e com mais alta qualidade",
         "valorComDesconto": 280,
@@ -54,12 +85,60 @@
     },
 
     {
-        "id": 1,
-        "img":"https://http2.mlstatic.com/D_NQ_NP_873157-MLB54984531460_052023-O.webp",
-        "nome": "Mouse,teclado e mousepad gamer",
+        "id":7,
+        "img": [
+                    "https://http2.mlstatic.com/D_NQ_NP_873157-MLB54984531460_052023-O.webp",
+                    "https://http2.mlstatic.com/D_NQ_NP_844709-MLB53433120020_012023-O.webp",
+                    "https://http2.mlstatic.com/D_NQ_NP_824084-MLB74736611292_032024-O.webp",
+                    "https://http2.mlstatic.com/D_NQ_NP_936776-MLB54244178130_032023-O.webp"
+                ],
+        "nome": "Kit Mouse,teclado e mousepad gamer",
         "descricao": "Kit mouse,teclado e mouse pad gamer de alta qualidade",
         "valorComDesconto": 340,
         "valorSemDesconto": 300
+    },
+
+    {
+        "id": 9,
+        "img": [
+                    "https://http2.mlstatic.com/D_NQ_NP_679399-MLU71038176907_082023-O.webp",
+                    "https://http2.mlstatic.com/D_NQ_NP_694798-MLU72647015283_112023-O.webp",
+                    "https://http2.mlstatic.com/D_NQ_NP_685526-MLU72646976491_112023-O.webp",
+                    "https://http2.mlstatic.com/D_NQ_NP_687845-MLU74978677927_032024-O.webp"
+                ],
+        "nome": "Console Sony PlayStation 5",
+        "descricao": "PlayStation 5 standard branco 4G 16RAM, 825ROM",
+        "valorComDesconto": 3692,
+        "valorSemDesconto": 4100
+    },
+
+    {
+        "id": 8,
+        "img": [
+                    "https://http2.mlstatic.com/D_NQ_NP_942133-MLA74651936102_022024-O.webp",
+                    "https://http2.mlstatic.com/D_NQ_NP_785556-MLA70799004349_072023-O.webp",
+                    "https://http2.mlstatic.com/D_NQ_NP_974966-MLA70768365974_072023-O.webp",
+                    "https://http2.mlstatic.com/D_NQ_NP_889421-MLA70799537283_072023-O.webp"
+                ],
+        "nome":"Console Microsoft Xbox Series X",
+        "descricao":"Microsoft Xbox Series X 1TB ROM 16RAM",
+        "valorComDesconto": 3539,
+        "valorSemDesconto": 3999
+    },
+
+    {
+        "id": 10,
+        "img": [
+                    "https://http2.mlstatic.com/D_NQ_NP_740974-MLU74281660936_022024-O.webp",
+                    "https://http2.mlstatic.com/D_NQ_NP_889314-MLU74155988624_012024-O.webp",
+                    "https://http2.mlstatic.com/D_NQ_NP_964383-MLU74281688902_022024-O.webp",
+                    "https://http2.mlstatic.com/D_NQ_NP_769894-MLU74831100310_032024-O.webp"
+                ],
+        "nome":"Placa De Video Mancer Radeon Rx 550",
+        "descricao":"Placa De Video Mancer Radeon Rx 550, 4gb, Gddr5, 128-bit",
+        "valorComDesconto":449,
+        "valorSemDesconto":600
     }
+
 
 ]
