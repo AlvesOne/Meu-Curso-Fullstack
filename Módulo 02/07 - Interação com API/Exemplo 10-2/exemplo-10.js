@@ -12,8 +12,8 @@ async function busca(){
                 <h3> ${produto.nome} </h3>
                 <p>${produto.descricao} </p>
                 <div>
-                    <span> R$ ${(produto.valorComDesconto).toFixed(2).replace(".",",")} </span>
-                    <span> R$ ${(produto.valorSemDesconto).toFixed(2).replace(".",",")} </span>
+                    <span  class="valorCom"> R$ ${(produto.valorComDesconto).toFixed(2).replace(".",",")} </span>
+                    <span  class="valorSem"> R$ ${(produto.valorSemDesconto).toFixed(2).replace(".",",")} </span>
                 </div>
             </div>
         `

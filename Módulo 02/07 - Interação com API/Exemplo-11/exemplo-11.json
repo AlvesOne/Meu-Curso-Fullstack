@@ -111,7 +111,12 @@
 
     {
         "id":3,
-        "img":"https://m.media-amazon.com/images/I/61qgJ64LKuL.__AC_SX300_SY300_QL70_ML2_.jpg",
+        "img": [
+                    "https://m.media-amazon.com/images/I/61qgJ64LKuL.__AC_SX300_SY300_QL70_ML2_.jpg",
+                    "https://m.media-amazon.com/images/I/61NHkm4VRLL._AC_SX679_.jpg",
+                    "https://m.media-amazon.com/images/I/51gJEXZr9ML._AC_SX679_.jpg",
+                    "https://m.media-amazon.com/images/I/51O2jQqxjRL._AC_SX679_.jpg"
+                ],
         "nome":"Smartphone Xiaomi POCO X5 Pro 5G ",
         "especificacoes":"Dual SIM 8GB 256GB 6,67 FHD+ 108Mp+8Mp+2Mp 5000mAh 67W Carregamento (Preto)",
         "precoComDesconto":2425.00,
@@ -120,7 +125,12 @@
 
     {
         "id":9,
-        "img":"https://m.media-amazon.com/images/I/61S9wYBcqeL._AC_SX679_.jpg",
+        "img": [
+                    "https://m.media-amazon.com/images/I/61S9wYBcqeL._AC_SX679_.jpg",
+                    "https://m.media-amazon.com/images/I/51Z45I6cOVL._AC_SX679_.jpg",
+                    "https://m.media-amazon.com/images/I/51JSdNiIHEL._AC_SX679_.jpg",
+                    "https://m.media-amazon.com/images/I/51kzHaDYfKL._AC_SX679_.jpg"
+                ],
         "nome":"Smartphone Nokia G21 4G",
         "especificacoes":"128GB Tela HD+ 6.5 Pol. Dual Chip 4GB RAM Pronto para Android 12 Câm Tripla 50MP+Selfie 8MP - NK083",
         "precoComDesconto":1399.00,
@@ -129,7 +139,12 @@
 
     {
         "id":7,
-        "img":"https://m.media-amazon.com/images/I/71kZfQA-Y7L.__AC_SY445_SX342_QL70_ML2_.jpg",
+        "img": [
+                    "https://m.media-amazon.com/images/I/71kZfQA-Y7L.__AC_SY445_SX342_QL70_ML2_.jpg",
+                    "https://m.media-amazon.com/images/I/719o5O7KNKL._AC_SX522_.jpg",
+                    "https://m.media-amazon.com/images/I/71+lqnNuA9L._AC_SX522_.jpg",
+                    "https://m.media-amazon.com/images/I/71Y1VGJIr3L._AC_SX522_.jpg"
+                ],
         "nome":"Apple iPhone 11",
         "especificacoes":"Tela LCD Liquid Retina HD de 6,1 polegadas Resistente a água e pó Sistema de câmara dupla de 12 MP; modo Noite, modo Retrato e vídeos em 4K a 60 fps",
         "precoComDesconto":2298.00,
@@ -138,7 +153,12 @@
 
     {
         "id":5,
-        "img":"https://m.media-amazon.com/images/I/61IgJvzu1eL.__AC_SY300_SX300_QL70_ML2_.jpg",
+        "img": [
+                    "https://m.media-amazon.com/images/I/61IgJvzu1eL.__AC_SY300_SX300_QL70_ML2_.jpg",
+                    "https://m.media-amazon.com/images/I/617ZeFqacOL._AC_SX679_.jpg",
+                    "https://m.media-amazon.com/images/I/51lrIYRQA5L._AC_SX679_.jpg",
+                    "https://m.media-amazon.com/images/I/611+O1Uk-VL._AC_SX679_.jpg"
+                ],
         "nome":"Smartphone Samsung Galaxy A54 5G",
         "especificacoes":"Galaxy A54 5G 256GB 8GB RAM Tela 6.4'' Câmera Tripla de até 50MP + Selfie 32MP - Branco",
         "precoComDesconto":1999.00,

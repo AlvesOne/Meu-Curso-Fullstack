@@ -23,7 +23,7 @@ async function detalhes(){
             <p>${produtos[inProduto].especificacoes}</p>
             <div class="grupoValores">
                 <span class="valorCom">${(produtos[inProduto].precoComDesconto).toFixed(2).replace(".",",")}</span>
-                <span class="valorCom">${(produtos[inProduto].precoSemDesconto).toFixed(2).replace(".",",")}</span>
+                <span class="valorSem">${(produtos[inProduto].precoSemDesconto).toFixed(2).replace(".",",")}</span>
             </div>
         </div>
 
