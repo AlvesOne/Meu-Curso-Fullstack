@@ -35,25 +35,39 @@ function cliqueCard(){
 }
 
 let slideIndex = 0;
+const slides = document.querySelectorAll('.slide');
+
 function showSlide(index){
-    const slides = document.querySelectorAll('.slide');
-    if(index >= slides.length){
-        slideIndex = 0;
-    } else if(index < 0){
-        slideIndex = slides.length -1;
+    
+    slideIndex = index
+
+    // zera a variavel do index da lista quando ela chega no final
+    if (slideIndex == 4){
+        slideIndex = 0
     }
-    slides.forEach((slide) => {
+
+    // coloca todos os slides invisiveis
+    for(let slide of slides){
         slide.style.display = 'none';
-    });
+    }
+
+    // coloca apenas o slide da vez visivel
     slides[slideIndex].style.display = 'block';
 
 }
+
+// botão proximo slide
 function nextSlid(){
-    slideIndex++;
-    showSlide(slideIndex);
+    showSlide(slideIndex++);
 }
+
+// botão slide anterior
 function prevSlid(){
-    slideIndex--;
-    showSlide(slideIndex);
+    showSlide(slideIndex--);
 }
-showSlide(slideIndex)
+
+// Chama a primeira execução do slide
+showSlide(0)
+
+// Altera o slide a cada 2 segundos
+setInterval(showSlide(slideIndex++),2000)

@@ -1,7 +1,7 @@
 
 
 header{
-    background-color: black;
+    background: url(img/t.jpg) no-repeat;
     color: aliceblue;
     text-align: center;
     padding: 2rem 0;
@@ -25,7 +25,7 @@ nav ul li:hover{
     font-weight: bold;
 }
 body{
-    background: rgb(228, 243, 246);
+    background:#dbf3f3;
     column-gap: 20px;
     row-gap: 20px;
     
@@ -50,6 +50,7 @@ h3{
     margin: 20px;
     cursor: pointer;
     box-shadow:2px 2px 2px 0px black;
+    background:#fff;
 }
 .logo{
     color: #0084ff;
@@ -73,6 +74,9 @@ h3{
 }
 button{
     background: #0084ff;
+}
+a{
+    color: #fff;
 }
 .mini-img{
     display: flex;
