@@ -15,6 +15,7 @@ async function busca(){
                     <span class="valorCom"> R$ ${(produto.valorComDesconto).toFixed(2).replace(".",",")} </span>
                     <span class="valorSem"> R$ ${(produto.valorSemDesconto).toFixed(2).replace(".",",")} </span>
                 </div>
+                <a href="detalhes.html"><button class="buttonCard">Comprar</button></a>
             </div>
         `
 
@@ -37,9 +38,8 @@ function cliqueCard(){
 let slideIndex = 0;
 const slides = document.querySelectorAll('.slide');
 
-function showSlide(index){
-    
-    slideIndex = index
+function showSlide(){
+
 
     // zera a variavel do index da lista quando ela chega no final
     if (slideIndex == 4){
@@ -58,16 +58,21 @@ function showSlide(index){
 
 // botão proximo slide
 function nextSlid(){
-    showSlide(slideIndex++);
+    slideIndex++
+    showSlide();
 }
 
 // botão slide anterior
 function prevSlid(){
-    showSlide(slideIndex--);
+    slideIndex--
+    showSlide();
 }
 
 // Chama a primeira execução do slide
 showSlide(0)
 
-// Altera o slide a cada 2 segundos
-setInterval(showSlide(slideIndex++),2000)
+// Altera o slide a cada 2 segundo
+setInterval(() => {
+    slideIndex++
+    showSlide()
+}, 5000);
