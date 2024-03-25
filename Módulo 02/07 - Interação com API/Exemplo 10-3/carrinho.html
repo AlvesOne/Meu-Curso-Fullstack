@@ -3,26 +3,81 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Carrinho de compras</title>
+        <link rel="stylesheet" href="carrinho.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
-        <h1>Produtos</h1>
-        <ul>
-            <li>
-                <span>Produto 1</span>
-                <button onclick="adicionarAoCarrinho('Produto 1', 50.00)">Comprar</button>
-            </li>
-            <li>
-                <span>Produto 2</span>
-                <button onclick="adicionarAoCarrinho('Produto 2', 70.00)">Comprar</button>
-            </li>
-            <!-- Adicione mais produtos conforme necessário -->
-        </ul>
-    
-        <h1>Carrinho de Compras</h1>
-        <ul id="carrinho">
-            <!-- Itens do carrinho serão adicionados aqui dinamicamente -->
-        </ul>
+        <header>
+            <span><b>R.ALVES ELETRONICOS</b></span>
+        </header>
+        <main>
+            <div class="page-title"> Seu carrinho</div>
+            <div class="content">
+                <section>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Prouto</th>
+                                <th>Preço</th>
+                                <th>Quantidade</th>
+                                <th>Total</th>
+                                <th>-</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="product">
+                                        <img src="" alt="">
+                                        <div class="info">
+                                            <div class="name">Nome do produto</div>
+                                            <div class="category">Categoria</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>R$ 120</td>
+                                <td>
+                                    <div class="qty">
+                                        <button><i class='bx bx-minus'></i></button>
+                                        <span>2</span>
+                                        <button><i class='bx bx-plus'></i></button>
+                                    </div>
+                                </td>
+                                <td>R$ 240</td>
+                                <td>
+                                   <button class="remove"><i class='bx bx-x'></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="product">
+                                        <img src="" alt="">
+                                        <div class="info">
+                                            <div class="name">Nome do produto</div>
+                                            <div class="category">Categoria</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>R$ 120</td>
+                                <td>
+                                    <div class="qty">
+                                        <button>-</button>
+                                        <span>2</span>
+                                        <button>+</button>
+                                    </div>
+                                </td>
+                                <td>R$ 240</td>
+                                <td>
+                                   <button><i class='bx bx-x'></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <aside>Resumo das compras</aside>
+            </div>
+        </main>
         
     </body>
 </html>

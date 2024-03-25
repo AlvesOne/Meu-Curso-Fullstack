@@ -25,7 +25,7 @@ async function verDetalhe(){
                 <span class="valorCom">R$ ${(produtos[inProduto].valorComDesconto).toFixed(2).replace(".",",")}</span>
                 <span class="valorSem">R$ ${(produtos[inProduto].valorSemDesconto).toFixed(2).replace(".",",")}</span>
             </div>
-            <a href="carrinho.html"><button class="buttonCard">Comprar</button></a>
+            <a href="carrinho.html"><button class="buttonCard">Adicionar ao carrinho</button></a>
 
         </div>
     `
