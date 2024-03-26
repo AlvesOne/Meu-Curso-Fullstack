@@ -6,25 +6,23 @@ body{
     background: #f6f6f6;
     font-family: 'lato',sans-serif;
 }
-button{
-    cursor: pointer;
-    background: transparent;
-    border: 0;
-    display: flex;
-    align-items: center;
-}
-header{
+
+.cabecalho{
     background: #111;
-    color: white;
+    color:  #0084ff;
     font-size: 24px;
     padding: 20px 0;
     display: flex;
     justify-content: center;
 
 }
+header span{
+    color:  white;
+}
 main{
     background: #fff;
-    padding: 0 30px;
+    padding: 0 30px 30px;
+
 }
 main .page-title{
     font-size: 40px;
@@ -37,10 +35,7 @@ main .page-title{
 section{
     flex: 1;
 }
-aside{
-    background: #f46363;
-    min-width: 250px;
-}
+
 table{
     width: 100%;
     border-collapse: collapse;
@@ -82,7 +77,7 @@ tbody .td{
     padding: 30px 0;
 }
 .remove{
-    background: #ccc;
+    background: #eee;
     border: 0;
     width: 30px;
     height: 30px;
@@ -92,14 +87,98 @@ tbody .td{
     justify-content: center;
     font-size: 20px;
 }
+.remove :hover{
+    background: #ddd;
+}
+button{
+    cursor: pointer;
+    border: 0;
+}
+
 .qty{
-    background: #ccc;
+    background: #eee;
     display: inline-flex;
-    padding: 5px 0;
+    padding: 0 0;
     justify-content: space-around;
     min-width: 60px;
     align-items: center;
     border-radius: 20px;
+    overflow: hidden;
+    height: 30px;
+}
+.qty button{
+    display: flex;
+    align-items: center;
+    background: transparent;
+    padding: 0 10px;
+    font-size: 20px;
+    height: 100%;
+}
+.qty button :hover{
+    background: #ddd;
+}
+span{
+    margin: 0 10px;
+}
+aside{
+    background:;
+    min-width: 250px;
+    margin-left: 30px;
+}
+aside button{
+    background: green;
+    display: block;
+    width: 100%;
+    border: 0;
+    padding: 15px 0;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+aside button:hover{
+    background: rgb(110, 194, 110);
+}
+.box{
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    background: #ddd;
+}
+.box button{
+    background: ;
+   
+}
+.boxx{
+    padding: 15px 20px;
+    font-size: 18px;
+    border-bottom: 1px solid #ccc;
+}
+.info{
+    padding: 20px;
+    font-size: 16px;
+}
+.info div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.info div button{
+    color: green;
+    background: transparent;
+    border: 0;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+i{
+
+}
+footer{
+    padding: 15px 20px ;
+    background: #ccc;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
 }
 
 
