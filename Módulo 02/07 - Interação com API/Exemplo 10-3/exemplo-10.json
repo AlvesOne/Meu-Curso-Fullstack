@@ -99,7 +99,7 @@
     },
 
     {
-        "id": 9,
+        "id": 8,
         "img": [
                     "https://http2.mlstatic.com/D_NQ_NP_679399-MLU71038176907_082023-O.webp",
                     "https://http2.mlstatic.com/D_NQ_NP_694798-MLU72647015283_112023-O.webp",
@@ -113,7 +113,7 @@
     },
 
     {
-        "id": 8,
+        "id": 9,
         "img": [
                     "https://http2.mlstatic.com/D_NQ_NP_942133-MLA74651936102_022024-O.webp",
                     "https://http2.mlstatic.com/D_NQ_NP_785556-MLA70799004349_072023-O.webp",
@@ -138,7 +138,78 @@
         "descricao":"Placa De Video Mancer Radeon Rx 550, 4gb, Gddr5, 128-bit",
         "valorComDesconto":449,
         "valorSemDesconto":600
+    },
+
+    {
+        "id":11,
+        "img": [
+                    "https://m.media-amazon.com/images/I/71izFpyABiL._AC_UF1000,1000_QL80_.jpg",
+                    "https://m.media-amazon.com/images/I/71yx9UHj50L._AC_SX679_.jpg",
+                    "https://m.media-amazon.com/images/I/71iU+8QId2L._AC_SX679_.jpg",
+                    "https://m.media-amazon.com/images/I/41huC7xmUIL._AC_SX679_.jpg"
+                ],
+        "nome":"Celular Xiaomi 12c",
+        "descricao":"Xiaomi Redmi 12C 128GB 4GB RAM/Dual Sim/Tela 6.71 Câmeras 50MP+0.08MP e 5MP(Global)",
+        "valorComDesconto":787.00,
+        "valorSemDesconto":910.00
+    },
+
+    {
+        "id":12,
+        "img": [
+                    "https://m.media-amazon.com/images/I/51rAZ-7IQcL._AC_SX679_.jpg",
+                    "https://m.media-amazon.com/images/I/61eKnrKVY4L._AC_SX679_.jpg",
+                    "https://m.media-amazon.com/images/I/71gApuoaMhL._AC_SX679_.jpg",
+                    "https://m.media-amazon.com/images/I/515qY5tEaPL._AC_SX679_.jpg"
+                ],
+        "nome":"Apple iPhone 14 RED",
+        "descricao":"Tela Super Retina XDR de 6,1 polegadas Capacidade 64GB, 128GB, 256GB Sistema de câmera dupla: 12MP principal, 12MP ultrawide com modo retrato",
+        "valorComDesconto":4049.10,
+        "valorSemDesconto":4449.00
+    },
+
+    {
+        "id":13,
+        "img": [
+                    "https://m.media-amazon.com/images/I/71KZXGAb5fL.__AC_SX300_SY300_QL70_ML2_.jpg",
+                    "https://m.media-amazon.com/images/I/61sckFgD9NL._AC_SX679_.jpg",
+                    "https://m.media-amazon.com/images/I/71DUvzqaTwL._AC_SX679_.jpg",
+                    "https://m.media-amazon.com/images/I/61okCrUfPxL._AC_SX679_.jpg"
+                ],
+        "nome":"Smartphone Samsung Galaxy S24+",
+        "descricao":"Galaxy AI, Selfie de 12MP, Tela de 6.7 1-120Hz, 256GB, 12GB RAM - Preto",
+        "valorComDesconto":5967.00,
+        "valorSemDesconto":6636.00
+    },
+    
+    {
+        "id":2,
+        "img": [
+                    "https://m.media-amazon.com/images/I/51vjQLRYFzL._AC_SX679_.jpg",
+                    "https://m.media-amazon.com/images/I/41mvTrF06dL._AC_SX679_.jpg",
+                    "https://m.media-amazon.com/images/I/416zogB8k7L._AC_SX679_.jpg",
+                    "https://m.media-amazon.com/images/I/31vut2wgtOL._AC_SX679_.jpg"
+                ],
+        "nome":"Smartphone Moto G84 5G",
+        "descricao":"Motorola Moto G84 5G 8GB 256GB Android 13.0 Snapdragon",
+        "valorComDesconto":1499.00,
+        "valorSemDesconto":1630.00
+    },
+
+    {
+        "id":11,
+        "img": [
+                    "https://m.media-amazon.com/images/I/51xcBSLK2UL._AC_SX679_.jpg",
+                    "https://m.media-amazon.com/images/I/81gfWRCq7UL._AC_SX679_.jpg",
+                    "https://m.media-amazon.com/images/I/71hHxWw6ezL._AC_SX679_.jpg",
+                    "https://m.media-amazon.com/images/I/51eyOcDyZ1L._AC_SX679_.jpg"
+                ],
+        "nome":"ASUS, Smartphone Gamer ROG Phone 6",
+        "descricao":"SNAPDRAGON 8GB 256GB/Android 12 Black/SIM (Nano) SIM (Nano) tela 6,78 AMOLED 165 Hz; 3. AirTrigger 6",
+        "valorComDesconto":4274.00,
+        "valorSemDesconto":5099.00
     }
+
 
 
 ]

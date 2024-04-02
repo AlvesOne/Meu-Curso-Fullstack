@@ -6,7 +6,6 @@ body{
     background: #f6f6f6;
     font-family: 'lato',sans-serif;
 }
-
 .cabecalho{
     background: #111;
     color:  #0084ff;
@@ -65,9 +64,6 @@ th{
 }
 .category{
     color: #666;
-}
-tbody{
-
 }
 tbody .tr{
     border-bottom:  3px solid #eee;
@@ -170,9 +166,6 @@ aside button:hover{
     font-size: 16px;
 }
 
-i{
-
-}
 footer{
     padding: 15px 20px ;
     background: #ccc;

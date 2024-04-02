@@ -56,9 +56,11 @@ h3{
 }
 .logo{
     color: #0084ff;
+    
 }
 .logo span{
-    color: #fff
+    color: #fff;
+  
 }
 .grupoValores{
     width: fit-content;
@@ -79,11 +81,15 @@ button{
     border-radius: 5px;
 }
 .buttonCard{
-    background: rgb(39, 221, 39);
-    color: rgb(10, 9, 9);
-    border-radius: 5px;
-    margin: 20px 0 0 0;
-    text-decoration: none;
+    background: green;
+    display: block;
+    width: 100%;
+    border: 0;
+    padding: 15px 0;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
     cursor: pointer;
 }
 a{
@@ -96,10 +102,10 @@ a{
     column-gap: 10px;
 }
 .carrossel{
-    position: relative;
+    position:static;
     max-width: 800px;
     margin: auto;
-    overflow: hidden;
+    
     
 }
 .slides{
@@ -112,7 +118,7 @@ a{
     background-size: cover;
 }
 .button button{
-    position: absolute;
+    position:relative;
     top: 50%;
     transform: translateY(-50%);
     background: rgba(0, 0, 0, 0.5);
@@ -120,7 +126,7 @@ a{
     border: none;
     padding: 10px;
     cursor: pointer;
-    z-index: 2;
+   
 }
 .prev{
     left: 0;
@@ -138,20 +144,28 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position:;
     bottom: 0;
     width: 100%;
 
 }
-footer .li{
-    list-style-type: none;
-    margin: 0 9rem;
-    text-decoration: none;
-    color: #fff;
-    font-size:larger;
-    cursor: pointer;
+.socialMidia{
+    display: flex;
+    justify-content: center;
 }
+
 
 footer p {
     margin: 0;
+}
+.carrinho{
+    background: green;
+    display: block;
+    width: 100%;
+    border: 0;
+    padding: 15px 0;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    cursor: pointer;
 }
