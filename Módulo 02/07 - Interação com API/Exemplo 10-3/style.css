@@ -27,12 +27,17 @@ nav ul li:hover{
 }
 
 body{
-    background:#dbf3f3;
-    column-gap: 20px;
-    row-gap: 20px;
+   
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(img/t.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
     
 }
-h3{
+h1{
+    font-family: "bungasai";
     text-align: center;
 }
 .lista-card{
@@ -55,10 +60,12 @@ h3{
     background:#fff;
 }
 .logo{
+    font-family: "bungasai";
     color: #0084ff;
     
 }
 .logo span{
+    font-family: "bungasai";
     color: #fff;
   
 }
@@ -118,7 +125,7 @@ a{
     background-size: cover;
 }
 .button button{
-    position:relative;
+    
     top: 50%;
     transform: translateY(-50%);
     background: rgba(0, 0, 0, 0.5);

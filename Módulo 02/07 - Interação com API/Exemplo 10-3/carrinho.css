@@ -5,9 +5,16 @@
 body{
     background: #f6f6f6;
     font-family: 'lato',sans-serif;
+    
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(img/t.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .cabecalho{
-    background: #111;
+    background:url(img/t.jpg);
     color:  #0084ff;
     font-size: 24px;
     padding: 20px 0;
@@ -140,7 +147,7 @@ aside button:hover{
     background: #ddd;
 }
 .box button{
-    background: ;
+    background: #424242;
    
 }
 .boxx{
@@ -158,8 +165,9 @@ aside button:hover{
     margin-bottom: 10px;
 }
 .info div button{
+    
     color: green;
-    background: transparent;
+    background:url(img/t.jpg);
     border: 0;
     display: flex;
     align-items: center;
@@ -173,7 +181,29 @@ footer{
     display: flex;
     justify-content: space-between;
 }
+footer {
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
 
+}
+.socialMidia{
+    display: flex;
+    justify-content: center;
+}
+
+
+footer p {
+    margin: 0;
+}
 
 
 
