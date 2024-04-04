@@ -7,6 +7,7 @@ header{
     width: 100%;
     position: sticky;
     top: 0;
+    font-family: "martila";
 }
 header nav ul {
     display: flex;
@@ -37,7 +38,7 @@ body{
     
 }
 h1{
-    font-family: "bungasai";
+    font-family: "martila";
     text-align: center;
 }
 .lista-card{
@@ -60,12 +61,12 @@ h1{
     background:#fff;
 }
 .logo{
-    font-family: "bungasai";
+    font-family: "martila";
     color: #0084ff;
     
 }
 .logo span{
-    font-family: "bungasai";
+    font-family:unset;
     color: #fff;
   
 }

@@ -44,7 +44,8 @@ function showSlide(){
     // zera a variavel do index da lista quando ela chega no final
     if (slideIndex == 4){
         slideIndex = 0
-    }
+    } 
+    
 
     // coloca todos os slides invisiveis
     for(let slide of slides){
