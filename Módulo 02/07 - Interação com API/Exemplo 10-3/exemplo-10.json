@@ -10,7 +10,8 @@
         "nome": "Notebook Acer Nitro 5",
         "descricao": "Notbook gamer de alta qualidade",
         "valorComDesconto": 3880,
-        "valorSemDesconto": 4290
+        "valorSemDesconto": 4290,
+        "detalhes":"- processador AMD RyzenTM 5 7535HS com 6 núcleos<br>- Tela 15.6 IPS de 144Hz com resolução Full HD<br>- GPU Nvidia® GeForce® RTXTM 3050 com 4 GB de memória dedicada GDDR6 (TGP de 60W)<br>- Memória RAM DDR5<br>- 512 GB de armazenamento em SSD NVMe<br>- Sistema Operacional Linux Gutta<br>- Tecnologia DTS® X Ultra Áudio<br>- Teclado retroiluminado na cor vermelha"
     },
 
     {
@@ -24,7 +25,8 @@
         "nome": "Celular Red Magic 9 pro",
         "descricao": "O melhor e mais potente celular gamer",
         "valorComDesconto": 4700,
-        "valorSemDesconto": 5100
+        "valorSemDesconto": 5100,
+        "detalhes":"Dispositivo desbloqueado para que você escolha a companhia telefônica de sua preferência.<br>Compatível com redes 5G.<br>Tela AMOLED de 6.8.<br>Tem 3 câmeras traseiras de 50Mpx/50Mpx/2Mpx.<br>Câmera frontal de 16Mpx.<br>Bateria de 6500mAh.<br>Memória interna de 256GB.<br>A prova dágua.<br>Com sensor de impressão digital.<br>Resistente à poeira"
     },
 
     {
@@ -39,7 +41,8 @@
         "nome": "PC gamer positivo",
         "descricao": "PC gamer completo de alta qualidade",
         "valorComDesconto": 3600,
-        "valorSemDesconto": 3900
+        "valorSemDesconto": 3900,
+        "detalhes":"- COMPUTADOR MONTADO E CONFIGURADO<br>Detalhes e especificações dos produtos:<br>Gabinete:<br>- Tipo: Gamer<br>- Lateral em Vidro temperado<br>- Frente em Vidro temperado<br>- Conexões Frontais: 2 USB 2.0 + 1 USB 3.0  + 2 Áudio<br>Ventoinhas:<br>- Acompanha 3 Ventoinhas Rgb na Parte Frontal do Gabinete e 1 Ventoinha Rgb na parte Traseira<br>- Alta Ventilação / Resfriamento dos Componentes.<br>- Mais estilo e durabilidade, para seu Setup Gamer nunca te deixar para trás nas batalhas!<br>- Tamanho: 120x120x25mm<br>MONITOR<br>- 19 POLEGADAS<br>- Furação VESA na parte traseira<br>- LED<br>- RESOLUÇÃO: HD<br>• CONEXÕES<br>- VGA - ACOMPANHA CABO<br>- HDMI<br>PROCESSADOR<br>- Processador: Intel Core i5 3ª Geração 3.10Gh<br>- Socket: LGA1155<br>- PLACA MÃE: Intel H61<br>- Rede: 10/100/1000 Mbps<br>- Suporta até: Intel Core i3 / i5 / i7<br>• CONEXÕES<br>- 4x conectores SATA<br>- 1x slot PCI Express x16<br>- 1x slot PCI Express x1<br>Traseira:<br>- 1x porta VGA<br>- 1x porta HDMI<br>- 4x portas USB 2.0<br>- 1x porta RJ-45 de rede<br>- Jacks de Áudio HD: Linha / Alto falante / Microfone<br>MEMÓRIA<br>- Tamanho: 16GB<br>- 2x slots DDR3<br>- Arquitetura da memória: Dual Channel DDR3<br>ARMAZENAMENTO<br>- SSD: 240GB<br>FONTE<br>- Fonte 500w<br>- 110/220V - BIVOLT<br>- Acompanha cabo de força<br>PLACA DE VIDEO<br>- Nvidia GT 730 4 GB DVI/HDMI/VGA<br>SISTEMA OPERACIONAL<br>- Windows 10 Trial<br>- 64 bits<br>- Pacote Office<br>BRINDE MOUSE RGB GAMER,  TECLADO RGB GAMER E HEADSET GAMER"
     },
 
     {
@@ -53,7 +56,8 @@
         "nome": "Cadeira gamer RGB",
         "descricao": "Cadeira gamer com LEDs RGB de alta qualidade",
         "valorComDesconto": 1100,
-        "valorSemDesconto": 890
+        "valorSemDesconto": 890,
+        "detalhes":"Unidades por kit: 1<br>Material do estofamento: PU<br>Confortável e durável.<br>Faixa de inclinação do encosto de 90°x180°.<br>Apoios de braços confortáveis.<br>Suporte lombar regulável.<br>Tem um apoio para cabeça.<br>Com rodas.<br>Giratória.<br>Com luzes.<br>Material do enchimento: espuma.<br>Peso máximo suportado: 130kg.<br>A cadeira atinge uma altura mínima de 120 cm e máxima de 130 cm."
     },
 
     {
@@ -67,7 +71,8 @@
         "nome": "Mesa gamer",
         "descricao": "Mesa gamer de alta qualidade",
         "valorComDesconto": 600,
-        "valorSemDesconto": 520
+        "valorSemDesconto": 520,
+        "detalhes":""
     },
 
     {
@@ -81,7 +86,8 @@
         "nome": "Headset Havit",
         "descricao": "Heaset Havit, o melhor e com mais alta qualidade",
         "valorComDesconto": 280,
-        "valorSemDesconto": 310
+        "valorSemDesconto": 310,
+        "detalhes":""
     },
 
     {
@@ -95,7 +101,8 @@
         "nome": "Kit Mouse,teclado e mousepad gamer",
         "descricao": "Kit mouse,teclado e mouse pad gamer de alta qualidade",
         "valorComDesconto": 340,
-        "valorSemDesconto": 300
+        "valorSemDesconto": 300,
+        "detalhes":""
     },
 
     {
@@ -109,7 +116,8 @@
         "nome": "Console Sony PlayStation 5",
         "descricao": "PlayStation 5 standard branco 4G 16RAM, 825ROM",
         "valorComDesconto": 3692,
-        "valorSemDesconto": 4100
+        "valorSemDesconto": 4100,
+        "detalhes":""
     },
 
     {
@@ -123,7 +131,8 @@
         "nome":"Console Microsoft Xbox Series X",
         "descricao":"Microsoft Xbox Series X 1TB ROM 16RAM",
         "valorComDesconto": 3539,
-        "valorSemDesconto": 3999
+        "valorSemDesconto": 3999,
+        "detalhes":""
     },
 
     {
@@ -137,7 +146,8 @@
         "nome":"Placa De Video Mancer Radeon Rx 550",
         "descricao":"Placa De Video Mancer Radeon Rx 550, 4gb, Gddr5, 128-bit",
         "valorComDesconto":449,
-        "valorSemDesconto":600
+        "valorSemDesconto":600,
+        "detalhes":""
     },
 
     {
@@ -151,7 +161,8 @@
         "nome":"Celular Xiaomi 12c",
         "descricao":"Xiaomi Redmi 12C 128GB 4GB RAM/Dual Sim/Tela 6.71 Câmeras 50MP+0.08MP e 5MP(Global)",
         "valorComDesconto":787.00,
-        "valorSemDesconto":910.00
+        "valorSemDesconto":910.00,
+        "detalhes":""
     },
 
     {
@@ -165,7 +176,8 @@
         "nome":"Apple iPhone 14 RED",
         "descricao":"Tela Super Retina XDR de 6,1 polegadas Capacidade 64GB, 128GB, 256GB Sistema de câmera dupla: 12MP principal, 12MP ultrawide com modo retrato",
         "valorComDesconto":4049.10,
-        "valorSemDesconto":4449.00
+        "valorSemDesconto":4449.00,
+        "detalhes":""
     },
 
     {
@@ -179,7 +191,8 @@
         "nome":"Smartphone Samsung Galaxy S24+",
         "descricao":"Galaxy AI, Selfie de 12MP, Tela de 6.7 1-120Hz, 256GB, 12GB RAM - Preto",
         "valorComDesconto":5967.00,
-        "valorSemDesconto":6636.00
+        "valorSemDesconto":6636.00,
+        "detalhes":""
     },
     
     {
@@ -193,7 +206,8 @@
         "nome":"Smartphone Moto G84 5G",
         "descricao":"Motorola Moto G84 5G 8GB 256GB Android 13.0 Snapdragon",
         "valorComDesconto":1499.00,
-        "valorSemDesconto":1630.00
+        "valorSemDesconto":1630.00,
+        "detalhes":""
     },
 
     {
@@ -207,7 +221,8 @@
         "nome":"ASUS, Smartphone Gamer ROG Phone 6",
         "descricao":"SNAPDRAGON 8GB 256GB/Android 12 Black/SIM (Nano) SIM (Nano) tela 6,78 AMOLED 165 Hz; 3. AirTrigger 6",
         "valorComDesconto":4274.00,
-        "valorSemDesconto":5099.00
+        "valorSemDesconto":5099.00,
+        "detalhes":""
     }
 
 
