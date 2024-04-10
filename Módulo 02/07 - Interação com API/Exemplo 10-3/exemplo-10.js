@@ -8,7 +8,7 @@ async function busca(){
     for(let produto of produtos){
         listaDiv.innerHTML += `
             <div class="card" data-id="${produto.id}">
-                <img src="${produto.img}" width="250" height="auto">
+                <img class="img" src="${produto.img}"  width="250" height="auto">
                 <h3> ${produto.nome} </h3>
                 <p>${produto.descricao} </p>
                 <div class="grupoValores">

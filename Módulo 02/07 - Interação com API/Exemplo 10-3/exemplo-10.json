@@ -72,7 +72,7 @@
         "descricao": "Mesa gamer de alta qualidade",
         "valorComDesconto": 600,
         "valorSemDesconto": 520,
-        "detalhes":""
+        "detalhes":"Largura: 114 cm<br>Profundidade: 45 cm<br>Altura: 74 cm<br>Composta de mdf.<br>Requer montagem.<br>É ideal para ler, escrever ou usar o computador."
     },
 
     {
@@ -87,7 +87,7 @@
         "descricao": "Heaset Havit, o melhor e com mais alta qualidade",
         "valorComDesconto": 280,
         "valorSemDesconto": 310,
-        "detalhes":""
+        "detalhes":"Marca: Havit<br>Modelo: H659d<br>Código: 1840151<br>Referência: H659d<br>Tamanho: Único<br>Material: TPE, ABS, Couro Sintético<br>Tipo: Headset<br>Peso: 300g<br>Microfone: Sim<br>Tamanho do Speaker: 50mm<br>Sensibilidade: 111 + 3dB<br>Impedância: 32Ohm + 15%<br>Freqüência: 20HZ-20KHZ<br>Microfone: 6 x 2.7mm<br>Comprimento do Cabo: 2.3 metros<br>Corrente de Operação: <30mA<br>Conector: P3 (3.5mm)<br>Cor: Preto<br>Compatibilidade: Celular (Android, IOS), PC (Windows, Mac, Linux), Videogame (Xbox, Playstation"
     },
 
     {
@@ -102,7 +102,7 @@
         "descricao": "Kit mouse,teclado e mouse pad gamer de alta qualidade",
         "valorComDesconto": 340,
         "valorSemDesconto": 300,
-        "detalhes":""
+        "detalhes":"Itens do kit:<br>1x Mouse 3200 DPI<br>1x Teclado semi-mecânico<br>1x Headset (com adaptador P2/P3)<br>1x Mousepad 220x180x2mm (SORTIDO)"
     },
 
     {
@@ -117,7 +117,7 @@
         "descricao": "PlayStation 5 standard branco 4G 16RAM, 825ROM",
         "valorComDesconto": 3692,
         "valorSemDesconto": 4100,
-        "detalhes":""
+        "detalhes":"1 Console PlayStation®5 Edição Digital;<br>1 Controle sem fio DualSense®;<br>1 SSD de 1TB;<br>2 bases para suporte horizontal;<br>1 Cabo HDMI®;<br>1 Cabo dealimentação de CA;<br>1 Cabo USB;<br>Materiais impressos"
     },
 
     {
@@ -132,7 +132,7 @@
         "descricao":"Microsoft Xbox Series X 1TB ROM 16RAM",
         "valorComDesconto": 3539,
         "valorSemDesconto": 3999,
-        "detalhes":""
+        "detalhes":"Capacidade: 1 TB<br>Inclui controle.<br>Resolução de 7680px x 4320px.<br>Memória RAM de 16GB.<br>Conta com: 1 cabo hdmi."
     },
 
     {
@@ -147,7 +147,7 @@
         "descricao":"Placa De Video Mancer Radeon Rx 550, 4gb, Gddr5, 128-bit",
         "valorComDesconto":449,
         "valorSemDesconto":600,
-        "detalhes":""
+        "detalhes":"Tamanho da memória: 4 GB<br>Interface PCI-Express 3.0.<br>Interface de memória: 128bit.<br>Possui conexão: 1 x hdmi 1 x dp 1 x dvi.<br>Ideal para trabalhar em alta velocidade.<br>nterface de Alimentação: direto na PCI-e<br>Frequência da Memória: 1500 MHz<br>Memória 4GB<br>Tipo de Memória: GDDR5"
     },
 
     {
@@ -162,7 +162,7 @@
         "descricao":"Xiaomi Redmi 12C 128GB 4GB RAM/Dual Sim/Tela 6.71 Câmeras 50MP+0.08MP e 5MP(Global)",
         "valorComDesconto":787.00,
         "valorSemDesconto":910.00,
-        "detalhes":""
+        "detalhes":"Redmi 12C FICHA TÉCNICA<br>Tela IPS LCD de 671 polegadas resolução HD+ de 1650 x 720 pixels taxa de atualização de 60 Hz brilho de até 500 nits<br>Processador MediaTek Helio G85<br>Memória RAM 4 GB<br>Armazenamento 128 GB<br>Câmera traseira 50 MP Principal + 2 MP Profundidade<br>Câmera frontal 5 MP<br>Dimensões 1688 x 764 x 88 mm<br>Peso 192 g<br>Bateria 5000 mAh com recarga de 10 W<br>Extras 4G WiFi 5 Dual Band Bluetooth 51 micro USB conector P2 som mono leitor de digitais na traseira expansão via MicroSD de até 512 GB<br>Sistema operacional Android 12 sob a MIUI 13 em versão especial<br>Garantia do vendedor: 30 dias"
     },
 
     {
@@ -177,7 +177,7 @@
         "descricao":"Tela Super Retina XDR de 6,1 polegadas Capacidade 64GB, 128GB, 256GB Sistema de câmera dupla: 12MP principal, 12MP ultrawide com modo retrato",
         "valorComDesconto":4049.10,
         "valorSemDesconto":4449.00,
-        "detalhes":""
+        "detalhes":"Memória RAM: 4 GB<br>Tela Super Retina XDR de 6.1 polegadas.(1)<br>Sistema avançado de câmeras para tirar melhores fotos em qualquer condição de iluminação.<br>Modo Cinema agora em 4K Dolby Vision de até 30 qps.<br>Modo ação para conseguir vídeos estáveis, mesmo com a câmera em mãos.<br>Detecção de Acidentes(2), uma nova funcionalidade de segurança que pede ajuda quando você não pode.<br>Bateria para todo o dia e até 26 horas de reprodução de video.(3)<br>A15 Bionic, com GPU e 5 núcleos para um rendimento fora de serie. Rede 5G ultra-rápida.(4)<br>Ceramic Shield e resistência à água, características de durabilidade líderes na indústria.(5)<br>iOS 16 oferece ainda mais opções de personalização e mais formas de comunicar-se e compartilhar.(6)"
     },
 
     {
@@ -192,11 +192,11 @@
         "descricao":"Galaxy AI, Selfie de 12MP, Tela de 6.7 1-120Hz, 256GB, 12GB RAM - Preto",
         "valorComDesconto":5967.00,
         "valorSemDesconto":6636.00,
-        "detalhes":""
+        "detalhes":"Memória RAM: 12 GB<br>Dispositivo desbloqueado para que você escolha a companhia telefônica de sua preferência.<br>Compatível com redes 5G.<br>Tela Dynamic AMOLED 2X de 6.7.<br>Tem 3 câmeras traseiras de 50Mpx/10Mpx/12Mpx.<br>Câmeras frontais de 12Mpx.<br>Processador Exynos 2400 de 3.2GHz com 12GB de RAM.<br>Bateria de 4900mAh com carregamento sem fio.<br>Memória interna de 512GB.<br>Com reconhecimento facial e sensor de impressão digital.<br>Cartão eSIM incluído"
     },
     
     {
-        "id":2,
+        "id":14,
         "img": [
                     "https://m.media-amazon.com/images/I/51vjQLRYFzL._AC_SX679_.jpg",
                     "https://m.media-amazon.com/images/I/41mvTrF06dL._AC_SX679_.jpg",
@@ -207,11 +207,11 @@
         "descricao":"Motorola Moto G84 5G 8GB 256GB Android 13.0 Snapdragon",
         "valorComDesconto":1499.00,
         "valorSemDesconto":1630.00,
-        "detalhes":""
+        "detalhes":"Dispositivo desbloqueado para que você escolha a companhia telefônica de sua preferência.<br>Compatível com redes 5G.<br>Tela POLED de 6.5.<br>Tem 2 câmeras traseiras de 50Mpx/8Mpx.<br>Câmeras frontais de 16Mpx.<br>Processador Snapdragon 695 Octa-Core de 2.2GHz com 8GB de RAM.<br>Bateria de 5000mAh.<br>Memória interna de 256GB.<br>Com reconhecimento facial e sensor de impressão digital.<br>Cartão eSIM incluído."
     },
 
     {
-        "id":11,
+        "id":15,
         "img": [
                     "https://m.media-amazon.com/images/I/51xcBSLK2UL._AC_SX679_.jpg",
                     "https://m.media-amazon.com/images/I/81gfWRCq7UL._AC_SX679_.jpg",
@@ -222,7 +222,7 @@
         "descricao":"SNAPDRAGON 8GB 256GB/Android 12 Black/SIM (Nano) SIM (Nano) tela 6,78 AMOLED 165 Hz; 3. AirTrigger 6",
         "valorComDesconto":4274.00,
         "valorSemDesconto":5099.00,
-        "detalhes":""
+        "detalhes":"Dispositivo desbloqueado para que você escolha a companhia telefônica de sua preferência.<br>Compatível com redes 5G.<br>Tela AMOLED de 6.78.<br>Tem 3 câmeras traseiras de 50Mpx/13Mpx/5Mpx.<br>Câmeras frontais de 12Mpx.<br>Processador Snapdragon 8+ Gen 1 Octa-Core de 3.19GHz com 8GB de RAM.<br>Bateria de 6000mAh.<br>Memória interna de 256GB.<br>Resistente aos salpicos.<br>Com reconhecimento facial e sensor de impressão digital."
     }
 
 
