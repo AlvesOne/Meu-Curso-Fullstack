@@ -25,29 +25,7 @@ header{
 
 
 }
-nav ul li{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 2rem 0;
-    width: 100%;
-    position:sticky;
-    top: 0;
 
-}
-li{
-    list-style-type: none;
-    margin: 0 9rem;
-    text-decoration: none;
-    color: #fff;
-    font-size:larger;
-    cursor: pointer;
-}
-header li:hover{
-    transform: translateY(-5px);
-    transition: all 0.2s;
-    font-weight: bold;
-}
 
 header span{
     color:  white;
