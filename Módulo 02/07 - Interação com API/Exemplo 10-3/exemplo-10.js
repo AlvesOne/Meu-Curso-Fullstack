@@ -77,3 +77,16 @@ setInterval(() => {
     slideIndex++
     showSlide()
 }, 5000);
+
+document.addEventListener("DOMContentLoaded", function() {
+    const mainImage = document.getElementById("produto.id");
+    const secondaryImage = document.querySelector("produto.img");
+
+    mainImage.addEventListener("mouseover", function() {
+        secondaryImage.style.display = "inline";
+    });
+
+    mainImage.addEventListener("mouseout", function() {
+        secondaryImage.style.display = "none";
+    });
+});

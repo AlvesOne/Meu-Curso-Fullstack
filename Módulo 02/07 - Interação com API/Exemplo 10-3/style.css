@@ -64,6 +64,7 @@ h1{
     cursor: pointer;
     box-shadow:2px 2px 2px 0px black;
     background:#fff;
+    border-radius: 10px;
 }
 .logo{
     font-family: "martila";
@@ -92,6 +93,7 @@ h1{
 button{
     background: #0084ff;
     border-radius: 5px;
+   
 }
 .buttonCard{
     background: green;
@@ -123,12 +125,17 @@ a{
 }
 .slides{
     display: flex;
+
 }
 .slide{
     flex: 0 0 auto;
     width: 100%;
     height: 300px;
     background-size: cover;
+    
+}
+.button{
+    justify-content: space-between;
 }
 .button button{
     position:static;
@@ -139,14 +146,17 @@ a{
     border: none;
     padding: 10px;
     cursor: pointer;
+   
     
    
 }
 .prev{
     left: 0;
+    
 }
 .next{
     right: 0;
+    
     
 }
 footer {
