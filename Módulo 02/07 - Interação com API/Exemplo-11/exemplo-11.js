@@ -31,3 +31,19 @@ function cliqueCard(){
     let elementoID = this.getAttribute("data-id")
     window.location.href = "detalhes.html?produtoid="+ elementoID
 }
+
+
+let list = document.querySelectorAll(".navegacao li")
+
+function ativarLink(){
+    list.forEach((item) => {
+        item.classList.remove("para")
+    });
+    this.classList.add("para");
+}
+
+list.forEach((item) => item.addEventListener("mouseover" ,ativarLink));
+
+
+let menuu = document.querySelector(".menuu")
+let 
