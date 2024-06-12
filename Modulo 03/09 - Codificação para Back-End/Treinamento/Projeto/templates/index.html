@@ -1,13 +1,16 @@
 
 {% load static %}
 <html>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
     <body>
         <p>
             BEM VINDO A PAGINA INICIAL!!
         </p>
 
 	    <a href="{% url 'pagina_cadastro' %}">Cadastro</a>
+        <a href="{% url 'pagina_eletros' %}">Eletros</a>
+        <a href="{% url 'pagina_moveis' %}">Moveis</a>
+        <a href="{% url 'pagina_vestuario' %}">Vestuario</a>
     
         
     </body>
