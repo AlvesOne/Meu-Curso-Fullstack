@@ -1,12 +1,17 @@
+{% load static %}
 <html>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
     <body>
+        
         <a href="{% url 'pagina_index' %}"><button>VOLTAR</button></a>
         <p>
-            Minha lista de Produtos:
+            Minha lista de Vestuario:
         </p>
         <ul>
             {% for produto in produtos %}
+            <div>   
                 <li>{{ produto.nome_vestuario }} - R$ {{ produto.valor_vestuario }}</li>
+            </div>
             {% endfor %}
         </ul>
     </body>
