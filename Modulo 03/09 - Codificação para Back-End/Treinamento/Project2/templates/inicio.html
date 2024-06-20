@@ -2,14 +2,18 @@
 <html>
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
     <body>
+        <header>
+            <a href="index.html"><h1 class="logo"> R.ALVES <span><span>VARIEDADES</span></h1></a>
+       
+        </header>
         <p>
             Esta é a página inicial
         </p>
 
 	    <a href="{% url 'pagina_cadastro' %}">Cadastro</a>
-        <a href="{% url 'pagina_cadastro' %}">Eletronicos</a>
-        <a href="{% url 'pagina_cadastro' %}">Moveis</a>
-        <a href="{% url 'pagina_cadastro' %}">Vestuario</a>
+        <a href="{% url 'pagina_eletronicos' %}">Eletronicos</a>
+        <a href="{% url 'pagina_moveis' %}">Moveis</a>
+        <a href="{% url 'pagina_vestuario' %}">Vestuario</a>
         
     </body>
 </html>

@@ -10,15 +10,15 @@ def LinkCadastro(request):
 
 def VerProdutos(request):
     produtos_lista = Moveis.objects.all()
-    return render(request, 'inicio.html', {'produtos': produtos_lista})
+    return render(request, 'moveis.html', {'produtos': produtos_lista})
 
 def VerProd(request):
     produtos_lista = Eletronicos.objects.all()
-    return render(request, 'inicio.html', {'produtos': produtos_lista})
+    return render(request, 'eletronicos.html', {'produtos': produtos_lista})
 
 def VerProdu(request):
     produtos_lista = Vestuario.objects.all()
-    return render(request, 'inicio.html', {'produtos': produtos_lista})
+    return render(request, 'vestuario.html', {'produtos': produtos_lista})
 
 
 
