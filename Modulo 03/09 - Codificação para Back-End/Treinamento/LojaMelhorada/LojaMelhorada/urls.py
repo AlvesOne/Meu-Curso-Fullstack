@@ -24,5 +24,6 @@ if settings.DEBUG:
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('apps.Produtos.urls'))
+    path('', include('apps.Produtos.urls')),
+    path("vitrine", include("apps.vitrine.urls"))
 ]
