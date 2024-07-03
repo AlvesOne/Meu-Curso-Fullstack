@@ -1,0 +1,17 @@
+
+<html>
+    <body>
+        <a href="{% url "pagina_inicial" %}">Voltar</a>
+
+        <p>
+            Detalhes do Produto:
+        </p>
+        
+            <div>
+                <li>{{ produto.nome_produto }} </li>
+                <img src={{produto.foto_produto}} width="100" height="250">
+                <li>R$ {{ produto.valor_produto }}</li>
+            </div> 
+      
+    </body>
+</html>
