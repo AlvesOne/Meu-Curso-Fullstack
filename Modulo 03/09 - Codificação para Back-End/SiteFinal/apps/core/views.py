@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect
 from .models import *
 from .forms import *
 import requests
+from django.http import JsonResponse
+from django.http import HttpResponse
 
 def VerIndex(request):
     busca_os = OrdemServico.objects.all()
@@ -201,3 +203,84 @@ def ibge(request):
         lista_municipios.append(municipio)
 
     return render(request, "ibge.html", {"municipios":lista_municipios, "requisicao":requisicao})
+
+def RetornaToken(request):
+    url = ''
+    try:
+        json = {
+            'email': 'rodrigoalves3108@hotmail.com',
+            'password' : 'alves3108'
+        } 
+        headers ={
+            'content-Type': 'application/json'
+        }
+        request = requests.post(url, json=json, headers=headers)
+        response = request.json()
+    except requests.RequestException as e:
+        return HttpResponse(f'Erro ao consumir a API:{str(e)}', status=500)
+    
+    return HttpResponse(response['token'], content_type="text/plain")
+
+def CriarCategoria(request):
+    url= ''
+
+    obter_token = RetornaToken(request)
+    conteudo_bytes = obter_token.content
+    token = conteudo_bytes.decode('utf-8')
+
+    headers= {
+        'Authorization': 'Bearer'+ token,
+        'Content-Type': 'application/json'
+    }
+
+    if request.method =="GET":
+        nova_categoria = FormularioCategoria()
+        try:
+            resposta = requests.get(url, headers= headers)
+            resposta.raise_for_status()
+            dados = resposta.json()
+        except requests.RequestException as e:
+            return HttpResponse(f'Erro ao consumir API:{str(e)}', status=500)
+        
+        categorias = dados['categorias']
+        return render(request, "form-categoria.html", {"form_categoria": nova_categoria, "categorias":categorias})
+    
+    else:
+        json = {
+            'tipo' : request.POST['tipo']
+        }
+        response = request.post(url, json=json, headers= headers)
+        if response.status_code in [200, 201]:
+            try:
+                reponse_data = response.json()
+                return redirect("pg_criar_categoria")
+            except requests.JSONDecodeError:
+                print("A resposta não e um JSON válido.")
+        
+        else:
+            return HttpResponse('Erro ao consumir a API', response.status_code)
+        
+def ExcluirCategoria(request, id_categoria):
+    url = '' + str(id_categoria)
+    obter_token = RetornaToken(request)
+    conteudo_bytes = obter_token.content
+    token = conteudo_bytes.decode('utf-8')
+
+    headers = {
+        'Authorization': 'Bearer ' + token,
+        'Content-Type': 'application/json'
+    }
+          
+    if request.method == "GET":             
+        response = requests.delete(url, headers=headers)
+              
+        if response.status_code in [200]:
+            try:
+                return redirect("pg_criar_categoria")
+            except requests.JSONDecodeError:
+                print("A resposta não é um JSON válido.")
+        else:
+            return HttpResponse('Erro ao consumir a API: ', response.status_code)
+
+
+
