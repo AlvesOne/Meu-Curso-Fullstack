@@ -283,4 +283,42 @@ def ExcluirCategoria(request, id_categoria):
             return HttpResponse('Erro ao consumir a API: ', response.status_code)
 
 
+def EditarCategoria(request, id_categoria):
+    url_editar_categoria = '' + str(id_categoria)
+    url_listar_categorias = ''
+
+    obter_token = RetornaToken(request)
+    conteudo_bytes = obter_token.content
+    token = conteudo_bytes.decode('utf-8')
+
+    headers = {
+        'Authorization': 'Bearer',
+        'content-Type' : 'application/json' 
+    }
+
+    resposta= requests.get(url_editar_categoria)
+    resposta.raise_for_status()
+    dados = resposta.json()
+    categoria = dados['categoria']
+
+    resposta_categorias = requests.get(url_listar_categorias ,headers=headers)
+    resposta_categorias.raise_for_status()
+    dados_categorias = resposta_categorias.json()
+    categorias = dados_categorias['categorias']
+
+    if request.method == "GET":
+        return render(request, "form-categoria.html", {"categoria":categoria , 'categorias' : categorias})
+    else:
+        json = {
+            'tipo':request.POST['tipo']
+        }
+        response = requests.put(url_editar_categoria, json=json, headers=headers)
+        if response.status_code in [200, 201]:
+            try:
+                return redirect("pg_criar_categori")
+            except requests.JSONDecodeError:
+                print("A resposta não e um json válido.")
+        else:
+            return render(request, "form-categoria.html", {"categoria":categoria , 'categorias': categorias})
+
 
