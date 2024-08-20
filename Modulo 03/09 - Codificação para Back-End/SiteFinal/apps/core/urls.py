@@ -21,7 +21,7 @@ urlpatterns = [
     path("editar-produto/<int:id_produto>", EditarProduto, name="pg_editar_produto"),
     path("excluir-produto/<int:id_produto>", ExcluirProduto, name="pg_excluir_produto"),
     path("ibge",ibge,name="ibge"),
-    
+    path("token", RetornaToken, name="token"),
     
     
 ]

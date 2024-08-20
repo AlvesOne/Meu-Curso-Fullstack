@@ -205,7 +205,7 @@ def ibge(request):
     return render(request, "ibge.html", {"municipios":lista_municipios, "requisicao":requisicao})
 
 def RetornaToken(request):
-    url = ''
+    url = 'http://127.0.0.1:9000/api/login'
     try:
         json = {
             'email': 'rodrigoalves3108@hotmail.com',
@@ -222,7 +222,7 @@ def RetornaToken(request):
     return HttpResponse(response['token'], content_type="text/plain")
 
 def CriarCategoria(request):
-    url= ''
+    url= 'http://127.0.0.1:9000/api/categorias'
 
     obter_token = RetornaToken(request)
     conteudo_bytes = obter_token.content
@@ -261,7 +261,7 @@ def CriarCategoria(request):
             return HttpResponse('Erro ao consumir a API', response.status_code)
         
 def ExcluirCategoria(request, id_categoria):
-    url = '' + str(id_categoria)
+    url = 'http://127.0.0.1:9000/api/categorias' + str(id_categoria)
     obter_token = RetornaToken(request)
     conteudo_bytes = obter_token.content
     token = conteudo_bytes.decode('utf-8')
@@ -284,8 +284,8 @@ def ExcluirCategoria(request, id_categoria):
 
 
 def EditarCategoria(request, id_categoria):
-    url_editar_categoria = '' + str(id_categoria)
-    url_listar_categorias = ''
+    url_editar_categoria = 'http://127.0.0.1:9000/api/categorias/' + str(id_categoria)
+    url_listar_categorias = 'http://127.0.0.1:9000/api/categorias'
 
     obter_token = RetornaToken(request)
     conteudo_bytes = obter_token.content
