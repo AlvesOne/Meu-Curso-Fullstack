@@ -1,40 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Municipios do Piaui</title>
-    </head>
-    <body>
-        <section class="container">
-            <nav>
-                <ul class="nav">
-                    <li class="nav-item">Municipios do Piaui-IBGE</li>
-                </ul>
-            </nav>
-        </section>
-        <div class="container">
-            <table class="table">
-                <thead class="thead-dark">
-                    <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">MUNICIPIO</th>
-                        <th scope="col">MICROREGIÃO</th>
-                        <th scope="col">MESOREGIÃO</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for municipio in municipios %}
-                        <tr>
-                            <th scope="row">{{municipio.id}}</th>
-                            <td>{{municipio.nome}}</td>
-                            <td>{{municipio.microregiao.nome}}</td>
-                            <td>{{municipio.microregiao.mesoregiao.nome}}</td>
-                        </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
-        </div>
-        
-    </body>
-</html>
+{% extends "base.html" %}
+{% load static %}
+{% block titulo %}
+
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link" href="{% url "pg_criar_ordemservico" %}">Ordem de Serviço</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url "pg_criar_cliente" %}">Cliente</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " href="{% url "pg_criar_empresa" %}">Empresa</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " href="{% url "pg_criar_servico" %}">Serviço</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " href="{% url "pg_criar_produto" %}">Produto</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " href="{% url "pg_criar_categoria" %}">Categoria</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active " href="{% url "ibge" %}">IBGE</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " href="{% url "pg_inicial" %}">Voltar</a>
+    </li>
+</ul>
+{% endblock %}
+{% block conteudo %}
+  <section class="container">
+      <nav>
+          <ul class="nav">
+              <li class="nav-item">Municipios do Piaui-IBGE</li>
+          </ul>
+      </nav>
+  </section>
+  <div class="container">
+      <table class="table">
+          <thead class="thead-dark">
+              <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">MUNICIPIO</th>
+                  <th scope="col">MICROREGIÃO</th>
+                  <th scope="col">MESOREGIÃO</th>
+              </tr>
+          </thead>
+          <tbody>
+              {% for municipio in municipios %}
+                  <tr>
+                      <th scope="row">{{municipio.id}}</th>
+                      <td>{{municipio.nome}}</td>
+                      <td>{{municipio.microregiao.nome}}</td>
+                      <td>{{municipio.microregiao.mesoregiao.nome}}</td>
+                  </tr>
+              {% endfor %}
+          </tbody>
+      </table>
+  </div>
+{% endblock %}

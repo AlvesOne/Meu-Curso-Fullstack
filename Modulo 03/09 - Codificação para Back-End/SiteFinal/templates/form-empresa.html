@@ -1,43 +1,60 @@
+{% extends "base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="{% static "style-formularios.css" %}">
-        <title>Formulário Empresa</title>
-    </head>
-    <body>
+{% block titulo %}
+    
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url "pg_criar_ordemservico" %}">Ordem de Serviço</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url "pg_criar_cliente" %}">Cliente</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="{% url "pg_criar_empresa" %}">Empresa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{% url "pg_criar_servico" %}">Serviço</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{% url "pg_criar_produto" %}">Produto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{% url "pg_criar_categoria" %}">Categoria</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{% url "ibge" %}">IBGE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{% url "pg_inicial" %}">Voltar</a>
+        </li>
+    </ul>
+{% endblock %}
+{% block conteudo %}
+    <h2>Formulário Empresa</h2>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form_empresa.as_p }}
+        <button type="submit" class="btn btn-primary">Salvar</button>
         <a href="{% url "pg_inicial" %}">
-            <button>Voltar</button>
+            <button type="button" class="btn btn-danger">Cancelar</button>
         </a>
-        <h2>Formulário Empresa</h2>
+    </form>
 
-        <form method="post">
-            {% csrf_token %}
-            {{ form_empresa.as_p }}
-            <button type="submit">Salvar</button>
-            <a href="{% url "pg_inicial" %}">
-                <button type="button">Cancelar</button>
-            </a>
-        </form>
+    <h2>Lista de Empresas</h2>
 
-        <h2>Lista de Empresas</h2>
-
-        {% for empresa in empresas %}
-            <div class="card-formulario">
-                <span>{{ empresa.razao_social }}</span>
-                <span><b>CNPJ:</b> {{ empresa.cnpj }}</span>
-                <div class="btns_formulario">
-                    <a href="{% url "pg_editar_empresa" empresa.id %}">
-                        <span>Editar Empresa</span>
-                    </a>
-                    <a href="{% url "pg_excluir_empresa" empresa.id %}">
-                        <span>Excluir Empresa</span>
-                    </a>
-                </div>
+    {% for empresa in empresas %}
+        <div class="card-formulario">
+            <span>{{ empresa.razao_social }}</span>
+            <span><b>CNPJ:</b> {{ empresa.cnpj }}</span>
+            <div class="btns_formulario">
+                <a href="{% url "pg_editar_empresa" empresa.id %}">
+                  <img src="https://img.icons8.com/?size=100&id=AuMLFRmG95tQ&format=png&color=000000" heght="20" width="30" data-bs-toggle="tooltip" title="editar empresa">
+                </a>
+                <a href="{% url "pg_excluir_empresa" empresa.id %}">
+                  <img src="https://img.icons8.com/?size=100&id=67432&format=png&color=000000" heght="20" width="30" data-bs-toggle="tooltip" title="excluir empresa">
+                </a>
             </div>
-        {% endfor %}
-
-    </body>
-</html>
+        </div>
+    {% endfor %}
+{% endblock %}
