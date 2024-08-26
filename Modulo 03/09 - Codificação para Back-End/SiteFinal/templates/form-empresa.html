@@ -34,7 +34,14 @@
 
     <form method="post">
         {% csrf_token %}
-        {{ form_empresa.as_p }}
+        <p>
+          <label for="id_razao_social">Razão social:</label>
+          <input type="text" class="border" name="razao_social" maxlength="100" required="" id="id_razao_social" value="{{empresa.razao_social}}">
+        </p>
+        <p>
+          <label for="id_cnpj">CNPJ:</label>
+          <input type="text" class="border" name="cnpj" maxlength="100" required="" id="id_cnpj" value="{{empresa.cnpj}}">
+        </p>
         <button type="submit" class="btn btn-primary">Salvar</button>
         <a href="{% url "pg_inicial" %}">
             <button type="button" class="btn btn-danger">Cancelar</button>
