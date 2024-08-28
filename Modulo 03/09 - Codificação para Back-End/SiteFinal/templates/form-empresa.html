@@ -31,30 +31,41 @@
 {% endblock %}
 {% block conteudo %}
     <h2>Formulário Empresa</h2>
-
-    <form method="post">
-        {% csrf_token %}
-        <p>
-          <label for="id_razao_social">Razão social:</label>
-          <input type="text" class="border" name="razao_social" maxlength="100" required="" id="id_razao_social" value="{{empresa.razao_social}}">
-        </p>
-        <p>
-          <label for="id_cnpj">CNPJ:</label>
-          <input type="text" class="border" name="cnpj" maxlength="100" required="" id="id_cnpj" value="{{empresa.cnpj}}">
-        </p>
-        <button type="submit" class="btn btn-primary">Salvar</button>
-        <a href="{% url "pg_inicial" %}">
-            <button type="button" class="btn btn-danger">Cancelar</button>
-        </a>
-    </form>
-
+    <div class="form">
+      <form method="post" id="form-empresa">
+          {% csrf_token %}
+          <p>
+            <label for="id_empresa">Razão social:</label>
+            <input type="text" class="border" name="razao_social" maxlength="100" required="" id="razao_social" value="{{empresa.razao_social}}">
+          </p>
+          <p>
+            <label for="id_cnpj">CNPJ:</label>
+            <input type="text" class="border" name="cnpj" maxlength="100" required="" id="cnpj" value="{{empresa.cnpj}}">
+          </p>
+          <button type="submit" class="btn btn-primary">Salvar</button>
+          <a href="{% url "pg_criar_empresa" %}">
+              <button type="button" class="btn btn-danger">Cancelar</button>
+          </a>
+      </form>
+    </div>
     <h2>Lista de Empresas</h2>
-
-    {% for empresa in empresas %}
-        <div class="card-formulario">
-            <span>{{ empresa.razao_social }}</span>
-            <span><b>CNPJ:</b> {{ empresa.cnpj }}</span>
-            <div class="btns_formulario">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Razão Social</th>
+          <th scope="col">CNPJ</th>
+          <th scope="col">Opções</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for empresa in empresas %}
+          <tr>
+            <th scope="row">{{empresa.id}}</th>
+            <td>{{empresa.razao_social}}</td>
+            <td>{{empresa.cnpj}}</td>
+            <td>
+              <div class="btns_formulario">
                 <a href="{% url "pg_editar_empresa" empresa.id %}">
                   <img src="https://img.icons8.com/?size=100&id=AuMLFRmG95tQ&format=png&color=000000" heght="20" width="30" data-bs-toggle="tooltip" title="editar empresa">
                 </a>
@@ -62,6 +73,9 @@
                   <img src="https://img.icons8.com/?size=100&id=67432&format=png&color=000000" heght="20" width="30" data-bs-toggle="tooltip" title="excluir empresa">
                 </a>
             </div>
-        </div>
-    {% endfor %}
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
 {% endblock %}

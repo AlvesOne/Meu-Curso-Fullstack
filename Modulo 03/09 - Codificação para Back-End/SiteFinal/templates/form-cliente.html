@@ -33,23 +33,53 @@
 
     <h2>Formulário Cliente</h2>
 
-    <form method="post" enctype="multipart/form-data">
+    <form method="post" id="form-cliente">
         {% csrf_token %}
-        {{ form_cliente.as_p }}
-        <button type="submit" class="btn btn-primary">Salvar</button>
-        <a href="{% url "pg_inicial" %}">
-            <button type="button" class="btn btn-danger">Cancelar</button>
-        </a>
+        <p>
+          <label for="id_cliente">Nome</label>
+          <input type="text" name="nome" maxlength="100" id="nome" value="{{cliente.nome}}">
+        </p>
+
+        <p>
+          <label for="id_cliente">Data de Nascimento</label>
+          <input type="date" name="data_nascimento" maxlength="100" id="data_nascimento" value="{{cliente.data_nascimento}}">
+        </p>
+
+        <p>
+          <label for="id_cliente">Foto</label>
+          <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="file" name="foto">
+            <p>
+              <button type="submit" class="btn btn-primary">Salvar</button>
+              <a href="{% url "pg_criar_cliente" %}">
+                <button type="button" class="btn btn-danger">Cancelar</button>
+              </a>
+            </p>
+          </form>
+        </p>
     </form>
 
     <h2>Lista de Clientes</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Cliente</th>
+          <th scope="col">Data de Nascimento</th>
+          <th scope="col">Foto</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for cliente in clientes %}
+          <tr>
+            <th scope="row">{{cliente.id}}</th>
+            <td>{{cliente.nome}}</td>
+            <td>{{cliente.data_nascimento}}</td>
+            <td>{{cliente.foto}}</td>
 
-    {% for cliente in clientes %}
-        <div class="card-formulario">
-            <img src="{{ cliente.foto.url }}" width="150" height="auto">
-            <span>{{ cliente.nome }}</span>
-            <span><b>Data nascimento:</b> {{ cliente.data_nascimento }}</span>
-            <div class="btns_formulario">
+            <td>
+              <div class="btns_formulario">
                 <a href="{% url "pg_editar_cliente" cliente.id %}">
                   <img src="https://img.icons8.com/?size=100&id=AuMLFRmG95tQ&format=png&color=000000" heght="20" width="30" data-bs-toggle="tooltip" title="editar cliente">
                 </a>
@@ -57,6 +87,10 @@
                   <img src="https://img.icons8.com/?size=100&id=67432&format=png&color=000000" heght="20" width="30" data-bs-toggle="tooltip" title="excluir cliente">
                 </a>
             </div>
-        </div>
-    {% endfor %}
+            </td>
+
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table> 
 {% endblock %}

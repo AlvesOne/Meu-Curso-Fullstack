@@ -76,36 +76,28 @@
         <th scope="col">Opçôes</th>
       </tr>
     </thead>
-    <tbody>
-      {% ordemservico in ordemservicos %}
-        <tr>
-          <th scope="row">{{ordemservico.id}}</th>
-          <td>{{ordemservico.cliente.nome}}</td>
-          <td>{{ordemservico.servico.tipo}}</td>
-          <td>{{ordemservico.data}}</td>
-        </tr>
-    </tbody>
+      <tbody>
+        {% for ordemservico in ordemservicos %}
+          <tr>
+            <th scope="row">{{ordemservico.id}}</th>
+            <td>{{ordemservico.cliente.nome}}</td>
+            <td>{{ordemservico.servico.tipo}}</td>
+            <td>{{ordemservico.data}}</td>
+            <td>
+              <div class="btns_formulario">
+                <a href="{% url "pg_editar_ordemservico" ordemservico.id %}">
+                    <img src="https://img.icons8.com/?size=100&id=AuMLFRmG95tQ&format=png&color=000000" heght="20" width="30" data-bs-toggle="tooltip" title="editar"> 
+                    
+                </a>
+                <a href="{% url "pg_excluir_ordemservico" ordemservico.id %}">
+                    <img src="https://img.icons8.com/?size=100&id=67432&format=png&color=000000" heght="20" width="30" data-bs-toggle="tooltip" title="excluir">
+                    
+                    
+                </a>
+              </div>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
   </table>
-
-
-  {% for ordenservico in ordemservicos %}
-  <tr>
-      <th scope="row">{{ordemservico.id}}</th>
-      <td>{{ ordemservico.nome }}</td>
-      <td>
-           <div class="btns_formulario">
-              <a href="{% url "pg_editar_ordemservico" ordemservico.id %}">
-                  <img src="https://img.icons8.com/?size=100&id=AuMLFRmG95tQ&format=png&color=000000" heght="20" width="30" data-bs-toggle="tooltip" title="editar"> 
-                  
-              </a>
-              <a href="{% url "pg_excluir_ordemservico" ordemservico.id %}">
-                  <img src="https://img.icons8.com/?size=100&id=67432&format=png&color=000000" heght="20" width="30" data-bs-toggle="tooltip" title="excluir">
-                  
-                  
-              </a>
-          </div>
-      </td>
-  </tr>
-{% endfor %}
-
 {% endblock %}

@@ -32,36 +32,33 @@
 {% block conteudo %}
 
   <h2>Formulário Serviço</h2>
-
-  <form method="post">
+  <div class="form">
+    <form method="post">
       {% csrf_token %}
       <p>
-      <label for="tipo">Tipo servico:</label>
-      <input type="text" name="tipo" maxlength="100" required="" id="tipo">
+        <label for="tipo">Tipo serviço:</label>
+        <input type="text" name="tipo" maxlength="100" required="" id="tipo" value="{{servico.tipo}}">
       </p>
-          
           
       <p>
-      <label for="valor">Valor servico:</label>
-      <input type="number" name="valor" step="0.01" required="" id="valor">
+        <label for="valor">Valor serviço:</label>
+        <input type="number" name="valor" step="0.01" required="" id="valor" value="{{servico.valor}}">
       </p>
-          
-          
+           
       <p>
       <label for="id_empresa">Empresa:</label>
-      <select name="empresa_id" required="" id="empresa_id">
-          <option value="" selected=""></option>
+      <select name="empresa_id" id="empresa_id">
+          <option value="servico.empresa.id" selected="{{servico.empresa.id}}">{{servico.empresa.razao_social}}</option>
           {% for empresa in empresas %}
-              <option value="{{ empresa.id }}">{{ empresa.razaoSocial }}</option>
+              <option value="{{ empresa.id }}">{{ empresa.razao_social }}</option>
           {% endfor %}
       </select>
       </p>
-          
-          
+       
       <p>
       <label for="id_categoria">Categoria:</label>
-      <select name="categoria_id" required="" id="categoria_id">
-          <option value="" selected=""></option>
+      <select name="categoria_id" id="categoria_id">
+          <option value="{{servico.categoria.id}}" selected="servico.categoria.id">{{servico.categoria.tipo}}</option>
           {% for categoria in categorias %}
               <option value="{{ categoria.id }}">{{ categoria.tipo }}</option>
           {% endfor %}
@@ -71,17 +68,31 @@
       <a href="{% url "pg_inicial" %}">
           <button type="button" class="btn btn-danger">Cancelar</button>
       </a>
-  </form>    
+    </form>
+  </div>   
 
   <h2>Lista de Serviços</h2>
-
-  {% for servico in servicos %}
-      <div class="card-formulario">
-          <span>{{ servico.tipo }}</span>
-          <span>R$ {{ servico.valor }}</span>
-          <span><b>Empresa:</b> {{ servico.empresa.razao_social }}</span>
-          <span><b>Categoria:</b> {{ servico.categoria.tipo }}</span>
-          <div class="btns_formulario">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Tipo</th>
+        <th scope="col">Valor</th>
+        <th scope="col">Empresa</th>
+        <th scope="col">Categoria</th>
+        <th scope="col">Opções</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for servico in servicos %}
+        <tr>
+          <th scope="row">{{servico.id}}</th>
+          <td>{{servico.tipo}}</td>
+          <td>{{servico.valor}}</td>
+          <td>{{servico.empresa.razao_social}}</td>
+          <td>{{servico.categoria.tipo}}</td>
+          <td>
+            <div class="btns_formulario">
               <a href="{% url "pg_editar_servico" servico.id %}">
                 <img src="https://img.icons8.com/?size=100&id=AuMLFRmG95tQ&format=png&color=000000" heght="20" width="30" data-bs-toggle="tooltip" title="editar serviço">
               </a>
@@ -89,7 +100,9 @@
                 <img src="https://img.icons8.com/?size=100&id=67432&format=png&color=000000" heght="20" width="30" data-bs-toggle="tooltip" title="excluir serviço">
               </a>
           </div>
-      </div>
-  {% endfor %}
-  
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
 {% endblock %}

@@ -28,28 +28,30 @@
           <a class="nav-link " href="{% url "pg_criar_servico" %}">Voltar</a>
         </li>
     </ul>
-    <h2>Formulário Categoria</h2>
+    
 {% endblock %}
 {% block conteudo %}
-    <form method="post">
-        {% csrf_token %}
-        <p>
-            <label for="id_tipo">Tipo:</label>
-            <input type="text" class="border" name="tipo" maxlength="100" required="" id="id_tipo" value="{{categoria.tipo}}">
-        </p>
-        <button type="submit" class="btn btn-primary">Salvar</button>
-        <a href="{% url "pg_criar_categoria" %}">
-            <button type="button"  class="btn btn-danger">Cancelar</button>
-        </a>
-    </form>
-
+<h2>Formulário Categoria</h2>
+    <div class="form">
+      <form method="post" id="form_categoria">
+          {% csrf_token %}
+          <p>
+              <label for="id_tipo">Tipo:</label>
+              <input type="text" class="border" name="tipo" maxlength="100" required="" id="id_tipo" value="{{categoria.tipo}}">
+          </p>
+          <button type="submit" class="btn btn-primary">Salvar</button>
+          <a href="{% url "pg_criar_categoria" %}">
+              <button type="button"  class="btn btn-danger">Cancelar</button>
+          </a>
+      </form>
+    </div>
     <h2>Lista de Categorias</h2>
     <table class="table">
         <thead>
             <tr>
                 <th scope="col">ID</th>
                 <th scope="col">Tipo</th>
-                <th scope="col" img=>Opções</th>
+                <th scope="col"=>Opções</th>
             </tr>
         </thead>      
         <tbody>
@@ -74,6 +76,4 @@
             {% endfor %}
         </tbody>
     </table>
-
-
 {% endblock %}
