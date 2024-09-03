@@ -721,6 +721,8 @@ def EditarServico(request, id_servico):
 
 def CriarOrdemServico(request):
     url = 'http://127.0.0.1:9000/api/ordemservicos'
+    url_cliente = 'http://127.0.0.1:9000/api/clientes'
+    url_servico = 'http://127.0.0.1:9000/api/servicos'
 
     obter_token = RetornaToken(request)
     conteudo_bytes = obter_token.content  # Obtém o conteúdo como bytes
@@ -731,6 +733,15 @@ def CriarOrdemServico(request):
         'Authorization': 'Bearer ' + token,
         'Content-Type': 'application/json'
     }
+    resposta_cliente = requests.get(url_cliente, headers=headers)
+    resposta_cliente.raise_for_status()
+    dados_clientes= resposta_cliente.json()
+    clientes= dados_clientes['clientes']
+
+    resposta__servico= requests.get(url_servico, headers=headers)
+    resposta__servico.raise_for_status()
+    dados_servicos= resposta__servico.json()
+    servicos= dados_servicos['servicos']
     
     if request.method == "GET":
         #nova_categoria = FormularioCategoria()
@@ -744,14 +755,14 @@ def CriarOrdemServico(request):
     
         # Extraia a string desejada do JSON
         ordemservicos = dados['ordemservicos']
-        return render(request, "form-ordemservico.html", { "ordemservicos": ordemservicos})
+        return render(request, "form-ordemservico.html", {"clientes":clientes, "servicos":servicos, "ordemservicos": ordemservicos})
         
     else:
        # Dados que você deseja enviar no corpo da solicitação POST
         json = {
-            'cliente': request.POST['cliente'],
-            'servico': request.POST['servico'],
-            'data_servico': request.POST['data_servico'],   
+            'cliente_id': request.POST['cliente_id'],
+            'servico_id': request.POST['servico_id'],
+            'date': request.POST['date'],   
         }
                
         # Fazendo a solicitação POST
