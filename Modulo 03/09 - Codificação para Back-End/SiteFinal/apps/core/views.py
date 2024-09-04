@@ -5,16 +5,16 @@ import requests
 from django.http import JsonResponse
 from django.http import HttpResponse
 
-def VerIndex(request):
-    busca_os = OrdemServico.objects.all()
 
-    for os in busca_os:
-        valor_os = 0
-        for servico in os.servico.all():
-            valor_os += servico.valor_servico
-        os.valor_total = valor_os
+    #busca_os = OrdemServico.objects.all()
 
-    return render(request, "index.html", {'ordemservicos': busca_os})
+   # for os in busca_os:
+   #     valor_os = 0
+    #    for servico in os.servico.all():
+    #        valor_os += servico.valor_servico
+    #    os.valor_total = valor_os
+
+  #  return render(request, "index.html", {'ordemservicos': busca_os})
 
 # def CriarCliente(request):
 #     busca_clientes = Cliente.objects.all()
@@ -751,7 +751,7 @@ def CriarOrdemServico(request):
             resposta.raise_for_status()  # Levanta um erro para códigos de status HTTP 4xx/5xx
             dados = resposta.json() # Obtém os dados JSON da resposta
         except requests.RequestException as e:
-            return HttpResponse(f'Erro ao consumir a API: {str(e)}', status=500)
+            return HttpResponse(resposta)
     
         # Extraia a string desejada do JSON
         ordemservicos = dados['ordemservicos']
@@ -762,7 +762,7 @@ def CriarOrdemServico(request):
         json = {
             'cliente_id': request.POST['cliente_id'],
             'servico_id': request.POST['servico_id'],
-            'date': request.POST['date'],   
+            'data': request.POST['data'],   
         }
                
         # Fazendo a solicitação POST
@@ -953,3 +953,28 @@ def EditarProduto(request, id_produto):
                 print("A resposta não e um json válido.")
         else:
             return render(request, "form-produto.html", {"produto":produto , 'produtos': produtos})
+        
+def VerIndex(request):
+    url= 'http://127.0.0.1:9000/api/ordemservicos'
+
+    obter_token= RetornaToken(request)
+    conteudo_bytes= obter_token.content
+    token= conteudo_bytes.decode('utf-8')
+
+    headers = {
+        'Authorization': 'Bearer '+token,
+        'Content-Type': 'application/json'
+    }
+
+    
+    if request.method == "GET":
+        try:
+            resposta= requests.get(url,headers=headers)
+            resposta.raise_for_status()
+            dados= resposta.json()
+        except requests.RequestException as e:
+            return HttpResponse( resposta)
+        
+    ordemservicos = dados['ordemservicos']
+    
+    return render(request,"index.html",{"ordemservicos": ordemservicos})
