@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denali Blog</title>
+</head>
+<body>
+    <header>
+        <h1>Denali Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'post_list' %}">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="posts">
+            {% for post in posts %}
+            <article class="post">
+                <h2><a href="{% url 'post_detail' post.id %}">{{ post.title }}</a></h2>
+                <p>{{ post.created_at|date:"d M Y" }} | {{ post.category }}</p>
+                <p>{{ post.content|truncatewords:30 }}</p>
+            </article>
+            {% empty %}
+            <p>No posts available.</p>
+            {% endfor %}
+        </section>
+    </main>
+</body>
+</html>
